@@ -129,13 +129,14 @@ export default {
       const randomCount = Math.floor(Math.random() * (8 - 2 + 1) + 2);
       const arr = [];
       this.showRoute = false;
-      this.addressSelected = this.addressAll;
       while (arr.length < randomCount) {
         const r = Math.floor(Math.random() * this.addressAll.length) + 1;
-        if (arr.indexOf(r) === -1) arr.push(r);
+        if (arr.indexOf(r) === -1) {
+          arr.push(r);
+          this.addressSelected.push(this.addressAll[r]);
+        }
       }
       console.log('arreglo:', arr);
-      this.addressSelected = this.addressAll.filter((item) => arr.indexOf(item.id) !== -1);
       console.log('this.addressSelected:', this.addressSelected);
       this.showRoute = false;
     },
