@@ -131,7 +131,7 @@ export default {
       this.showRoute = false;
       this.addressSelected = this.addressAll;
       while (arr.length < randomCount) {
-        const r = Math.floor(Math.random() * 917) + 1;
+        const r = Math.floor(Math.random() * this.addressAll.length) + 1;
         if (arr.indexOf(r) === -1) arr.push(r);
       }
       console.log('arreglo:', arr);
