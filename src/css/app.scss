@@ -1,0 +1,46 @@
+/* // app global css in SCSS form
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+#some-div {
+  height: 100px;
+}
+
+#map-wrapper {
+  background-color: red;
+  height: calc(100% - 100px);
+  margin: 0;
+}
+ */
+html, body, #app, #q-app, main {
+  height: 100%;
+  margin: 0;
+}
+#app{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top:0;
+}
+#some-div {
+  height:100%;
+  flex-grow: .4;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+#map-wrapper {
+  flex-grow: 1.6;
+  background-color: red;
+  height:88.3vh;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
