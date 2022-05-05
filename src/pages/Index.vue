@@ -2,45 +2,57 @@
   <q-page v-if="dataLoaded">
     <div id="app">
       <div id="some-div">
-        <q-drawer :width="338" v-model="left" side="left" overlay behavior="desktop" bordered>
-          <q-list>
-            <q-item-label class="body" header>
-              <q-item>
-                <q-btn
-                color="secondary" label="Random Choose" clickable
-                @click="randomChoose" />
+
+        <q-drawer :width="338" v-model="left" side="left" overlay behavior="desktop">
+          <div class="action-box-style">
+                        <div class="txt-box-style">
+              <q-item class="body text-h4 float-left" header>
+                New York galleries
               </q-item>
-              <q-item>
-                <q-btn
-                :disabled="addressSelected.length > 8"
-                color="primary" label="Create Route" clickable
-                @click="createRoutePost" />
+                             <q-item class="text-overline" v-if="addressSelected.length <= 8">
+                  {{ addressSelected.length }} addresses.
               </q-item>
 
-            </q-item-label>
-            <q-item
-            v-show="!showRoute"
-            v-for="point in addressSelected"
-            :key="point.id" clickable v-ripple @click="manualChoose(point)">
+            </div>
+              <div class="btn-box-style">
+              <q-item class="btn-random-style">
+                <q-btn
+                outline rounded color="green-6"
+                label="Filter" clickable @click="randomChoose" />
+              </q-item>
+                            <div
+              v-if="addressSelected.length <= 8" class="btn-map-style">
+
+                  <q-btn
+                  v-if="!loandingConfig"
+                  flat round color="red-4" icon="close" clickable
+                    @click="cleanChoose" />
+
+                  <q-btn
+                  v-show="!loandingConfig"
+                  color="blue-5" flat round icon="directions" clickable
+                    @click="createRoutePost" />
+
+              </div>
+
+            </div>
+          </div>
+          <q-list v-show="!loandingConfig" separator>
+            <q-item bordered v-show="!showRoute" v-for="point in addressSelected"
+            :key="point.id" clickable v-ripple
+              @click="manualChoose(point)">
               <q-item-section>
                 <q-item-label>{{ point.location }}</q-item-label>
                 <q-item-label caption>{{ point.lat }}, {{ point.long }}</q-item-label>
               </q-item-section>
             </q-item>
-            <q-item
-            v-show="showRoute"
-            v-for="point in waypointsApi"
-            :key="point.Geo.location" clickable v-ripple @click="manualChoose(point)">
+            <q-item v-show="showRoute" v-for="point in waypointsApi"
+            :key="point.Geo.location" clickable v-ripple
+              @click="manualChoose(point)">
               <q-item-section>
                 <q-item-label>{{ point.Geo.Location }}</q-item-label>
                 <q-item-label caption>{{ point.Geo.Lat }}, {{ point.Geo.Long }}</q-item-label>
               </q-item-section>
-            </q-item>
-            <q-item>
-              <q-btn
-              :disabled="addressSelected.length > 8"
-              color="primary" label="Clean Choose" clickable
-              @click="cleanChoose" />
             </q-item>
           </q-list>
         </q-drawer>
@@ -72,6 +84,7 @@ export default {
   },
   data() {
     return {
+      loandingConfig: false,
       left: true,
       addressSelected: [{
         lat: 0,
@@ -149,8 +162,10 @@ export default {
       console.log('Response:', point);
     },
     cleanChoose() {
+      this.loandingConfig = true;
       this.addressSelected = this.addressAll;
       this.showRoute = false;
+      this.loandingConfig = false;
     },
     loadData() {
       api.get('/')
@@ -165,6 +180,7 @@ export default {
     },
     createRoutePost() {
       this.showRoute = false;
+      this.loandingConfig = true;
       api.post('/createRoute/1', this.addressSelected)
         .then((response) => {
           console.log('responsePost:', response.data.Steps);
@@ -179,6 +195,7 @@ export default {
           });
           console.log('responsePost:', this.polyline);
           this.showRoute = true;
+          this.loandingConfig = false;
         });
     },
   },

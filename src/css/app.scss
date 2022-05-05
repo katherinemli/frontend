@@ -44,3 +44,29 @@ html, body, #app, #q-app, main {
   margin-bottom: 0px;
   margin-left: 0px;
 }
+.btn-map-style {
+  flex-direction: row;
+  display: flex;
+  align-items: end;
+  align-self: center;
+}
+.btn-random-style {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-bottom: 0;
+}
+.btn-box-style {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+.txt-box-style {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.action-box-style {
+  display: flex;
+  flex-direction: row;
+}
