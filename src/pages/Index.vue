@@ -71,7 +71,7 @@
                 <q-btn
                 outline rounded color="green-6" label="Filter" clickable @click="randomChoose" />
               </q-item>
-              <q-item class="text-overline" v-if="addressSelected.length <= 8">
+              <q-item class="text-overline btn-box-mobile" v-if="addressSelected.length <= 8">
                 {{ addressSelected.length }} addresses.
               </q-item>
               <q-item class="btn-random-style">

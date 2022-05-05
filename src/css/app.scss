@@ -48,23 +48,28 @@ html, body, #app, #q-app, main {
   display: flex;
   flex-direction: row;
 }
-#mobile{
+#mobile {
   height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
   margin-top:0;
 }
-.some-div-mobile{
+.some-div-mobile {
   display: flex;
   flex-direction: row;
 }
-.map-wrapper-mobile{
+.map-wrapper-mobile {
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
   height:88.3vh;
   background-color: red;
+}
+.btn-box-mobile {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 @media (max-width: $breakpoint-xs-max){
   .txt-box-style {
