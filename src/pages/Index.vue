@@ -1,20 +1,18 @@
 <template>
   <q-page v-if="dataLoaded">
-    hola
     <div id="app">
       <div id="some-div">
         <q-drawer :width="338" v-model="left" side="left" overlay behavior="desktop" bordered>
           <q-list>
             <q-item-label class="body" header>
               <q-item>
-                {{addressSelected.length}}
                 <q-btn
                 color="secondary" label="Random Choose" clickable
                 @click="randomChoose" />
               </q-item>
               <q-item>
                 <q-btn
-
+                :disabled="addressSelected.length > 8"
                 color="primary" label="Create Route" clickable
                 @click="createRoutePost" />
               </q-item>
