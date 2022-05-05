@@ -3,7 +3,7 @@ import axios from 'axios';
 
 Vue.prototype.$axios = axios;
 
-const api = axios.create({ baseURL: 'http://localhost:3000' });
+const api = axios.create({ baseURL: 'https://katherine-backend.herokuapp.com' });
 Vue.prototype.$api = api;
 
 export { axios, api };
