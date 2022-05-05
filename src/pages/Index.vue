@@ -1,9 +1,10 @@
 <template>
   <q-page v-if="dataLoaded">
-    <div id="app">
+    <q-resize-observer @resize="onResize" />
+    <div v-if="drawerState" id="app">
       <div id="some-div">
 
-        <q-drawer :width="338" v-model="left" side="left" overlay behavior="desktop">
+        <q-drawer :width="338" v-model="drawerState" side="left" overlay behavior="desktop">
           <div class="action-box-style">
             <div class="txt-box-style">
               <q-item class="body text-h4 float-left" header>
@@ -64,6 +65,34 @@
         </l-map>
       </div>
     </div>
+  <div v-else  id="mobile">
+<div class="some-div-mobile">
+             <q-item class="btn-random-style">
+                <q-btn
+                outline rounded color="green-6" label="Filter" clickable @click="randomChoose" />
+              </q-item>
+              <q-item class="text-overline" v-if="addressSelected.length <= 8">
+                {{ addressSelected.length }} addresses.
+              </q-item>
+              <q-item class="btn-random-style">
+              <q-btn
+                v-if="!loandingConfig"
+                flat round color="red-4" icon="close" clickable @click="cleanChoose" />
+              </q-item>
+              <q-item>
+               <q-btn
+                v-show="!loandingConfig" color="blue-5" flat round icon="directions" clickable
+                  @click="createRoutePost" />
+              </q-item>
+</div>
+<div class="map-wrapper-mobile">
+          <l-map style="height: 100%" ref="map" :zoom="zoom" :center="center" :options="mapOptions">
+          <l-tile-layer :url="url" :attribution="attribution" />
+          <l-routing-machine
+          v-if="showRoute" :data="addressSelected.map(a => a)" :waypoints="polyline.map(a => a)" />
+        </l-map>
+</div>
+  </div>
   </q-page>
 </template>
 
@@ -130,12 +159,25 @@ export default {
         { lat: 38.7436056, lng: -9.2304153 },
         { lat: 38.7436056, lng: -0.131281 },
       ],
+      drawerState: true,
     };
   },
   beforeMount() {
     this.loadData();
   },
   methods: {
+    onResize(size) {
+      console.log(size);
+      // {
+      //   width: 1200 // width of viewport (in px)
+      //   height: 920 // height of viewport (in px)
+      // }
+      if (size.width < 1000) { // md is 992px
+        this.drawerState = false;
+      } else {
+        this.drawerState = true;
+      }
+    },
     randomChoose() {
       const randomCount = Math.floor(Math.random() * (8 - 2 + 1) + 2);
       const arr = [];
