@@ -47,7 +47,7 @@ html, body, #app, #q-app, main {
 .btn-map-style {
   flex-direction: row;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   align-self: center;
 }
 .btn-random-style {
@@ -59,12 +59,10 @@ html, body, #app, #q-app, main {
 .btn-box-style {
   display: flex;
   flex-direction: column;
-  flex-grow: 2;
 }
 .txt-box-style {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 .action-box-style {
   display: flex;

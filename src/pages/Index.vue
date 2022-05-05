@@ -5,52 +5,50 @@
 
         <q-drawer :width="338" v-model="left" side="left" overlay behavior="desktop">
           <div class="action-box-style">
-                        <div class="txt-box-style">
+            <div class="txt-box-style">
               <q-item class="body text-h4 float-left" header>
                 New York galleries
               </q-item>
-                             <q-item class="text-overline" v-if="addressSelected.length <= 8">
-                  {{ addressSelected.length }} addresses.
+              <q-item class="text-overline" v-if="addressSelected.length <= 8">
+                {{ addressSelected.length }} addresses.
               </q-item>
 
             </div>
-              <div class="btn-box-style">
+            <div class="btn-box-style">
               <q-item class="btn-random-style">
                 <q-btn
-                outline rounded color="green-6"
-                label="Filter" clickable @click="randomChoose" />
+                outline rounded color="green-6" label="Filter" clickable @click="randomChoose" />
               </q-item>
-                            <div
-              v-if="addressSelected.length <= 8" class="btn-map-style">
+              <div v-if="addressSelected.length <= 8" class="btn-map-style">
 
-                  <q-btn
-                  v-if="!loandingConfig"
-                  flat round color="red-4" icon="close" clickable
-                    @click="cleanChoose" />
+                <q-btn
+                v-if="!loandingConfig"
+                flat round color="red-4" icon="close" clickable @click="cleanChoose" />
 
-                  <q-btn
-                  v-show="!loandingConfig"
-                  color="blue-5" flat round icon="directions" clickable
-                    @click="createRoutePost" />
+                <q-btn
+                v-show="!loandingConfig" color="blue-5" flat round icon="directions" clickable
+                  @click="createRoutePost" />
 
               </div>
 
             </div>
           </div>
           <q-list v-show="!loandingConfig" separator>
-            <q-item bordered v-show="!showRoute" v-for="point in addressSelected"
-            :key="point.id" clickable v-ripple
+            <q-item bordered
+            v-show="!showRoute" v-for="point in addressSelected" :key="point.id" clickable v-ripple
               @click="manualChoose(point)">
               <q-item-section>
-                <q-item-label>{{ point.location }}</q-item-label>
+                <q-item-label>
+                  {{ point.location }}
+                </q-item-label>
                 <q-item-label caption>{{ point.lat }}, {{ point.long }}</q-item-label>
               </q-item-section>
             </q-item>
-            <q-item v-show="showRoute" v-for="point in waypointsApi"
-            :key="point.Geo.location" clickable v-ripple
+            <q-item v-show="showRoute"
+            v-for="(point, idx) in waypointsApi" :key="point.Geo.location" clickable v-ripple
               @click="manualChoose(point)">
               <q-item-section>
-                <q-item-label>{{ point.Geo.Location }}</q-item-label>
+                <q-item-label>{{ idx + 1 }}.{{ point.Geo.Location }}</q-item-label>
                 <q-item-label caption>{{ point.Geo.Lat }}, {{ point.Geo.Long }}</q-item-label>
               </q-item-section>
             </q-item>
@@ -144,22 +142,15 @@ export default {
       this.showRoute = false;
       this.addressSelected = [];
       while (arr.length < randomCount) {
-        console.log('arr.length:', arr.length);
-        console.log('randomCount:', randomCount);
         const r = Math.floor(Math.random() * (this.addressAll.length - 0 + 1) + 0);
-        console.log('arr.indexOf(r):', arr.indexOf(r));
         if (arr.indexOf(r) === -1) {
-          console.log('randomIndex:', r);
           arr.push(r);
-          console.log('this.addressAll[r]:', this.addressAll[r]);
           this.addressSelected.push(this.addressAll[r]);
         }
       }
-      console.log('this.addressSelected:', this.addressSelected);
       this.showRoute = false;
     },
-    manualChoose(point) {
-      console.log('Response:', point);
+    manualChoose() {
     },
     cleanChoose() {
       this.loandingConfig = true;
@@ -171,7 +162,6 @@ export default {
       api.get('/')
         .then((response) => {
           this.addressAll = response.data;
-          console.log(typeof this.addressAll);
           this.addressSelected = this.addressAll;
           this.dataLoaded = true;
         })
@@ -183,7 +173,6 @@ export default {
       this.loandingConfig = true;
       api.post('/createRoute/1', this.addressSelected)
         .then((response) => {
-          console.log('responsePost:', response.data.Steps);
           this.polyline = [];
           this.waypointsApi = response.data.Steps;
           response.data.Steps.map((x) => {
@@ -193,7 +182,6 @@ export default {
             this.polyline.push(point);
             return x;
           });
-          console.log('responsePost:', this.polyline);
           this.showRoute = true;
           this.loandingConfig = false;
         });
