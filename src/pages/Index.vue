@@ -1,18 +1,20 @@
 <template>
   <q-page v-if="dataLoaded">
+    hola
     <div id="app">
       <div id="some-div">
         <q-drawer :width="338" v-model="left" side="left" overlay behavior="desktop" bordered>
           <q-list>
             <q-item-label class="body" header>
               <q-item>
+                {{addressSelected.length}}
                 <q-btn
                 color="secondary" label="Random Choose" clickable
                 @click="randomChoose" />
               </q-item>
               <q-item>
                 <q-btn
-                :disabled="addressSelected.length > 8"
+
                 color="primary" label="Create Route" clickable
                 @click="createRoutePost" />
               </q-item>
@@ -30,7 +32,7 @@
             <q-item
             v-show="showRoute"
             v-for="point in waypointsApi"
-            :key="point.id" clickable v-ripple @click="manualChoose(point)">
+            :key="point.Geo.location" clickable v-ripple @click="manualChoose(point)">
               <q-item-section>
                 <q-item-label>{{ point.Geo.Location }}</q-item-label>
                 <q-item-label caption>{{ point.Geo.Lat }}, {{ point.Geo.Long }}</q-item-label>
@@ -129,14 +131,19 @@ export default {
       const randomCount = Math.floor(Math.random() * (8 - 2 + 1) + 2);
       const arr = [];
       this.showRoute = false;
+      this.addressSelected = [];
       while (arr.length < randomCount) {
-        const r = Math.floor(Math.random() * this.addressAll.length) + 1;
+        console.log('arr.length:', arr.length);
+        console.log('randomCount:', randomCount);
+        const r = Math.floor(Math.random() * (this.addressAll.length - 0 + 1) + 0);
+        console.log('arr.indexOf(r):', arr.indexOf(r));
         if (arr.indexOf(r) === -1) {
+          console.log('randomIndex:', r);
           arr.push(r);
+          console.log('this.addressAll[r]:', this.addressAll[r]);
           this.addressSelected.push(this.addressAll[r]);
         }
       }
-      console.log('arreglo:', arr);
       console.log('this.addressSelected:', this.addressSelected);
       this.showRoute = false;
     },
@@ -150,14 +157,8 @@ export default {
     loadData() {
       api.get('/')
         .then((response) => {
-          console.log('se cargo data inicial:', response.data);
-          const addressBeautyed = response.data.map((x) => {
-            const addressBeauty = x.location.replaceAll('_', ' ');
-            x.location = addressBeauty;
-            return x;
-          });
-
-          this.addressAll = addressBeautyed;
+          this.addressAll = response.data;
+          console.log(typeof this.addressAll);
           this.addressSelected = this.addressAll;
           this.dataLoaded = true;
         })
