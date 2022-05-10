@@ -76,12 +76,13 @@
               </q-item>
               <q-item class="btn-random-style">
               <q-btn
-                v-if="!loandingConfig"
+                v-show="!loandingConfig && addressSelected.length <= 8"
                 flat round color="red-4" icon="close" clickable @click="cleanChoose" />
               </q-item>
               <q-item>
                <q-btn
-                v-show="!loandingConfig" color="blue-5" flat round icon="directions" clickable
+               v-show="!loandingConfig && addressSelected.length <= 8"
+               color="blue-5" flat round icon="directions" clickable
                   @click="createRoutePost" />
               </q-item>
 </div>
