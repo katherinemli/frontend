@@ -137,7 +137,7 @@ export default {
                 return L.marker(wp.latLng, {
                   draggable: true,
                   icon: L.icon({
-                    iconUrl: 'https://scontent.fymy1-2.fna.fbcdn.net/v/t39.30808-6/277559713_10229060095865954_9049664362750812883_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=r8AusFuiJAMAX_nRMPc&_nc_ht=scontent.fymy1-2.fna&oh=00_AT8haQqxTBuLsbHpJAShhztpkPIksmGcaiDg1F951NrYnw&oe=62767D3D',
+                    iconUrl: 'https://firebasestorage.googleapis.com/v0/b/portafolio-348519.appspot.com/o/icons8-marcador-48.png?alt=media&token=b6e7f616-68c9-4fc7-ac92-e417840620fd',
                     iconSize: [32, 37],
                     iconAnchor: [16, 37],
                   }),
