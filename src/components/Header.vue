@@ -21,7 +21,7 @@
       height: 100%;"
       /> -->
     <img
-      src="https://source.unsplash.com/random/300×300"
+      src="https://gnrm.se/img/Who-am-I-1.jpg"
       id="companyLogo"
       style=
       "width: 100%;
@@ -32,7 +32,7 @@
     Based on Canada
   </div>
   <div id="item-5">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    ipsum dolor, sit amet consectetur adipisicing elit.
     Ducimus atque fugit voluptates quo praesentium quia debitis
     rem quis iure quasi eum consectetur deleniti impedit, libero
     dolorum. Eligendi dicta dolore debitis.

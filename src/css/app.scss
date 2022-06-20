@@ -410,9 +410,9 @@ progress::-moz-progress-bar {
 @media screen and (min-width: 100px) and (max-width: 600px) { 
   .angry-grid {
     display: grid;
-    background-color: #25ce7b;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.15fr 2fr 0.1fr 0.1fr;
-    grid-template-columns: 1fr 1fr 0.1fr;
+    background-color: #fff8ff;
+    grid-template-rows: 0.1fr 0.05fr 0.1fr 0.1fr 0.1fr 0.1fr 0.07fr 0.1fr 1fr 0.06fr 0.1fr 0.1fr;
+    grid-template-columns: 0.02fr 0.2fr 0.7fr 0.1fr;
     
     gap: 0px;
     height: 100%; 
@@ -421,58 +421,58 @@ progress::-moz-progress-bar {
     grid-row-start: 1;
     font-size: clamp(2em,5vw,3em);
     grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
     
   }
   #item-1 {
     font-size: clamp(2em,5vw,3em);
     grid-row-start: 3;
     grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
   #item-2 {
     grid-row-start: 4;
     font-size: clamp(2em,5vw,3em);
     grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
   #item-2-1 {
     grid-row-start: 5;
     font-size: clamp(2em,5vw,3em);
     grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  #item-4 {
+    font-size: clamp(2em,5vw,3em);
+    grid-row-start: 6;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    place-self: center normal;
   }
   #item-3 {
     font-size: clamp(2em,5vw,3em);
     grid-row-start: 7;
     grid-row-end: 10;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  #item-4 {
-    font-size: clamp(2em,5vw,3em);
-    grid-row-start: 7;
-    grid-row-end: 9;
-    grid-column-start: 1;
-    grid-column-end: 3;
-   place-self: self-end normal;
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
   #item-5 {
     font-size: clamp(1em,2.5vw,1.5em);
-    grid-row-start: 10;
-    grid-row-end: 11;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
   #item-6 {
-    grid-row-start: 10;
+    grid-row-start: 12;
     font-size: clamp(1em,2.5vw,1.5em);
-    grid-row-end: 11;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-row-end: 13;
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
 }
