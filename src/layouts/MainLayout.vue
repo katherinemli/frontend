@@ -1,7 +1,8 @@
 <template>
-  <q-layout view="hHr lpR fFf">
+  <q-layout class="background-color-set" view="hHr lpR fFf">
      <q-resize-observer @resize="onResize" />
-<q-header v-if="drawerState" reveal class="bg-white text-black" height-hint="98">
+<q-header v-if="drawerState" reveal class="background-color-set" height-hint="98">
+      <div class="noise-overlay"></div>
       <q-toolbar>
         <q-toolbar-title>
           <q-icon class="text-dark">
@@ -22,7 +23,8 @@
         flat label="katherine.lib.ira@gmail.com" icon="gmail"></q-btn>
       </q-toolbar>
     </q-header>
-        <q-header v-else reveal class="bg-white text-black" height-hint="98">
+        <q-header v-else reveal class="background-color-set" height-hint="98">
+      <div class="noise-overlay"></div>
       <q-toolbar>
         <q-btn
           flat @click="openURL(urlGithubProject)"
@@ -37,8 +39,8 @@
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
-    <q-page-container>
-      <q-tab-panels v-model="tab" animated>
+    <q-page-container >
+      <q-tab-panels ref="paneltab" v-model="tab" animated class="background-color-set">
         <q-tab-panel name="index">
           <router-view/>
         </q-tab-panel>
