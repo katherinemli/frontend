@@ -4,6 +4,8 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
+      { path: 'map', component: () => import('pages/MapView.vue') },
+      { path: 'graph', component: () => import('pages/GraphView.vue') },
     ],
   },
 
