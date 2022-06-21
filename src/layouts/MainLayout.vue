@@ -3,6 +3,8 @@
      <q-resize-observer @resize="onResize" />
 <q-header v-if="drawerState" reveal class="background-color-set" height-hint="98">
       <div class="noise-overlay"></div>
+      <div ref="cursor"></div>
+      <div ref="cursorFollower"></div>
       <q-toolbar>
         <q-toolbar-title>
           <q-icon class="text-dark">
@@ -69,6 +71,8 @@ export default ({
       drawerState: true,
       tab: 'index',
     };
+  },
+  mounted() {
   },
   methods: {
     openURL,

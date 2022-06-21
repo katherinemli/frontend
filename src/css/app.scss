@@ -4,7 +4,7 @@ html, body, #app, #q-app {
 }
 .background-color-set {
   background-color: #77849E;
-  color: #1A1813;
+  color: #fff;
 }
 .noise-overlay {
   position: fixed;
@@ -14,7 +14,7 @@ html, body, #app, #q-app {
   bottom: -50%;
   width: 200%;
   height: 200vh;
- 
+  pointer-events: none;
   background-repeat: repeat;
   // animation: bg-animation .4s infinite;
   opacity: .05;
@@ -366,11 +366,13 @@ progress::-moz-progress-bar {
   position: relative;
 }
 .angry-grid {
-  display: grid; 
+  display: grid;
+  font-family: 'fuentePrueba';
   grid-template-rows: 0.1fr 0.1fr 0.02fr 0.1fr 0.2fr 0.2fr 0.1fr 0.1fr;
   grid-template-columns: 0.5fr 0.5fr 0.1fr 0.3fr 0.2fr 0.2fr 0.1fr 1fr;
   gap: 0px;
   color: #1A1813;
+  // color: #fff;
   height: 90vh;
 }
 #item-0 {
