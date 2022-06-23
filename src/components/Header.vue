@@ -1,18 +1,15 @@
 <template>
 <div class="angry-grid">
     <div class="item-1 gsRevealFromLeft" id="item-1" ref="titleReveal1">
-    I'm katherine Liberona
+    I'm Katherine Liberona
   </div>
   <div class="item-2 gsRevealFromLeft" id="item-2" ref="titleReveal2">
     a Fullstack Developer
   </div>
   <div class="item-3" id="item-3" ref="imgReveal">
 <!--     <img
-      src="~assets/me.jpg"
+      src="~assets/pp.png"
       id="companyLogo"
-      style=
-      "width: 100%;
-      height: 100%;"
       /> -->
 <!--     <img
     @mouseenter="overImageEnter" @mouseleave="overImageLeave"

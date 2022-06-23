@@ -23,6 +23,5 @@ $negative  : #C10015;
 $info      : #31CCEC;
 $warning   : #F2C037;
 
-@font-face
-    font-family fuentePrueba
-    src url(../src/css/themes/fonts/DancingScript-VariableFont_wght.ttf)
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+$typography-font-family : 'Patua One', cursive !default;

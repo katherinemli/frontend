@@ -2,10 +2,6 @@
     <div class="container">
       <div class="container-inner">
         <img
-          class="popoutcircle"
-          src="~assets/bg.png"
-        />
-        <img
           class="popoutimg popoutimg1"
           src="~assets/pp.png"
         />
