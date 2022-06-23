@@ -14,7 +14,7 @@
       "width: 100%;
       height: 100%;"
       /> -->
-    <img
+<!--     <img
     @mouseenter="overImageEnter" @mouseleave="overImageLeave"
       ref="item3img"
       src="https://gnrm.se/img/Who-am-I-1.jpg"
@@ -22,7 +22,8 @@
       style=
       "width: 100%;
       height: 100%;"
-      />
+      /> -->
+      <Popout/>
   </div>
   <div id="item-4" class="gsRevalFromRight"
   ref="basedCanada">
@@ -46,10 +47,12 @@
 </template>
 <script>
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Popout from './Popout.vue';
 
 export default {
   name: 'Header',
   components: {
+    Popout,
   },
   data() {
     return {
@@ -96,10 +99,10 @@ export default {
       const {
         aboutMeReveal,
         imgReveal,
-        titleReveal0,
+        // titleReveal0,
         titleReveal1,
         titleReveal2,
-        titleReveal21,
+        // titleReveal21,
         basedCanada,
         links,
       } = this.$refs;
@@ -117,12 +120,12 @@ export default {
         onEnterBack: () => this.animateFrom(aboutMeReveal, -1),
         onLeave: () => hide(aboutMeReveal),
       });
-      ScrollTrigger.create({
+      /*       ScrollTrigger.create({
         trigger: titleReveal0,
         onEnter: () => this.animateFrom(titleReveal0),
         onEnterBack: () => this.animateFrom(titleReveal0, -1),
         onLeave: () => hide(titleReveal0),
-      });
+      }); */
       ScrollTrigger.create({
         trigger: titleReveal1,
         onEnter: () => this.animateFrom(titleReveal1),
@@ -135,12 +138,12 @@ export default {
         onEnterBack: () => this.animateFrom(titleReveal2, -1),
         onLeave: () => hide(titleReveal2),
       });
-      ScrollTrigger.create({
+      /*       ScrollTrigger.create({
         trigger: titleReveal21,
         onEnter: () => this.animateFrom(titleReveal21),
         onEnterBack: () => this.animateFrom(titleReveal21, -1),
         onLeave: () => hide(titleReveal21),
-      });
+      }); */
       ScrollTrigger.create({
         trigger: basedCanada,
         onEnter: () => this.animateFrom(basedCanada),

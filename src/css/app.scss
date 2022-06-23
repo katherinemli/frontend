@@ -378,10 +378,9 @@ progress::-moz-progress-bar {
 #item-0 {
   grid-row-start: 1;
   grid-column-start: 1;
-  font-size: clamp(2em,5vw,3em);
   grid-row-end: 1;
   grid-column-end: 1;
-  
+  font-size: clamp(2em,5vw,3em);
 }
 #item-1 {
   font-size: clamp(2em,5vw,3em);
@@ -492,8 +491,8 @@ progress::-moz-progress-bar {
     font-size: clamp(2em,5vw,3em);
     grid-row-start: 7;
     grid-row-end: 10;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 3;
   }
   #item-5 {
     font-size: clamp(1em,2.5vw,1.5em);
@@ -509,4 +508,56 @@ progress::-moz-progress-bar {
     grid-column-start: 3;
     grid-column-end: 4;
   }
+}
+.container {
+  transform: scale(0.8);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container:hover {
+  transform: scale(1.2);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+  .popoutimg1{
+    transform: scale(1) translateY(0);
+    transform-origin: 50% top;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .popoutcircle{
+    
+  }
+}
+.container-inner {
+  
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+
+}
+.popoutcircle {
+  background-color: #fee7d3;
+  cursor: pointer;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  width: 100%;
+  clip-path: path("M 77 280 m -75, 0 a 75,75 0 1,0 360,0 a 75,75 0 1,0 -360,0");
+  pointer-events: none;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.popoutimg1 {
+  clip-path: path("M 2 291 A 75 75 0 1 0 361 269 V 3 H 0 V 283");
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.95) translateY(28px);
+  transform-origin: 50% top;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  
 }
