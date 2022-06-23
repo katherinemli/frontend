@@ -3,8 +3,8 @@ html, body, #app, #q-app {
   max-height: 100%;
 }
 .background-color-set {
-  background-color: #77849E;
-  color: #fff;
+  background-color: #f2f2f2;
+  color: #1A1813;
 }
 .noise-overlay {
   position: fixed;
@@ -366,12 +366,10 @@ progress::-moz-progress-bar {
 }
 .angry-grid {
   display: grid;
-  font-family: $typography-font-family;
+  font-family: 'Jost', sans-serif;
   grid-template-rows: 0.1fr 0.1fr 0.02fr 0.1fr 0.2fr 0.2fr 0.1fr 0.1fr;
   grid-template-columns: 0.5fr 0.5fr 0.1fr 0.3fr 0.2fr 0.2fr 0.1fr 1fr;
   gap: 0px;
-  color: #1A1813;
-  // color: #fff;
   height: 90vh;
 }
 #item-0 {
