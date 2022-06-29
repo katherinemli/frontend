@@ -6,7 +6,9 @@
   <div class="item-2 gsRevealFromLeft" id="item-2" ref="titleReveal2">
     a Fullstack Developer
   </div>
-  <div class="item-3" id="item-3" ref="imgReveal">
+  <div
+  @mouseenter="overImageEnter"
+  @mouseleave="overImageLeave" class="item-3" id="item-3" ref="imgReveal">
 <!--     <img
       src="~assets/pp.png"
       id="companyLogo"
@@ -27,15 +29,131 @@
     Based on Canada
   </div>
   <div id="item-5" ref="aboutMeReveal">
-    I'm passionate about building engaging
-    experiences that contribute to the overall
-    growth of a company. I possess a Bachelor’s
-    Degree in Computer Science and I have industry experience
-    building websites and web applications using Vue, Angular,
-    Twig, PHP 5.3 and Go. With an eye for intuitive, well designed
-    and user-friendly websites, I love to build websites that not only
-    look great, but also feel great to use, regardless of how the final
-    user access the web.
+    <p>
+      <mark class="svgstyle">
+      <svg
+      ref="animationsvgRef"
+      :class="(showAnimation ? 'animationsvg' : '')"
+      viewBox="115 140 70 70"
+      width="3em" height="3em"
+      xmlns="http://www.w3.org/2000/svg"
+      style="opacity:1">
+        <path
+        d="M173
+        196
+        L172
+        196.33333333333334
+        L169.8
+        197.2
+        L164.71428571428572
+        197.71428571428572
+        L161.5
+        197.875
+        L156.125
+        198
+        L150
+        197.625
+        L143.5
+        196.75
+        L136.75
+        195.125
+        L130.875
+        192.75
+        L125.75
+        189.875
+        L121.875
+        186.25
+        L119.125
+        181.875
+        L118.125
+        176.875
+        L118.625
+        171.875
+        L120.375
+        167
+        L123.25
+        162.5
+        L127.125
+        158.625
+        L131.875
+        155.25
+        L137.5
+        152.625
+        L143.5
+        151.125
+        L149.5
+        151.125
+        L155.5
+        152.375
+        L161.25
+        154.5
+        L166.5
+        157.5
+        L171
+        161.125
+        L174.75
+        165.375
+        L177.625
+        170.25
+        L180
+        175.125
+        L181.375
+        179.625
+        L181.875
+        183.625
+        L181.5
+        187.25
+        L180.75
+        190.375
+        L179.5
+        193
+        L178
+        195
+        L176.375
+        196.375
+        L174.75
+        197.375
+        L173.375
+        198.125
+        L172
+        198.83333333333334
+        L171
+        199
+        L170.5
+        199"
+        fill="none"
+        stroke-linecap="round"
+        stroke="black"
+        stroke-width="0.5"/>
+      </svg>
+        <div class="loveFolder">
+          I love to build websites that look and feel great to use.
+        </div>
+
+        </mark>
+    </p>
+    <mark class="independence">Work</mark>
+    <p>
+      Industry experience
+      building web applications using
+    </p>
+    <p>
+      <mark :class="(showAnimation? 'greenvue' : 'nobackground')">Vue</mark>,
+      <mark :class="(showAnimation? 'redangular' : 'nobackground')">Angular</mark>,
+      <mark :class="(showAnimation? 'greentwig' : 'nobackground')">Twig</mark>,
+      <mark :class="(showAnimation? 'purplephp' : 'nobackground')">PHP 5.3</mark>
+      and
+      <mark :class="(showAnimation? 'bluego' : 'nobackground')">Go</mark>.
+    </p>
+    <p>
+      Teach <mark :class="(showAnimation? 'pythonblue' : 'nobackground')">Python</mark>
+      and
+      <mark :class="(showAnimation? 'pythonyellow' : 'nobackground')">Distributed Systems</mark>.
+    </p>
+        <mark class="independence">Education</mark>
+    <p>
+      Bachelor’s Degree in Computer Science.
+    </p>
   </div>
   <div id="item-6" class="gsRevalFromRight" ref="links">
     Links
@@ -44,6 +162,7 @@
 </template>
 <script>
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import svgcircle from 'assets/cicle.svg';
 import Popout from './Popout.vue';
 
 export default {
@@ -54,6 +173,8 @@ export default {
   data() {
     return {
       showMap: false,
+      svgcircle,
+      showAnimation: false,
     };
   },
   beforeMount() {
@@ -64,17 +185,12 @@ export default {
   },
   methods: {
     overImageEnter(event) {
-      // clientX/Y gives the coordinates relative to the viewport in CSS pixels.
-      // pageX/Y gives the coordinates relative to the <html> element in CSS pixels.
-      console.log(event.pageX);
-      console.log(event.pageY);
-
-      // screenX/Y gives the coordinates relative to the screen in device pixels.
-      console.log(event.screenX);
-      console.log(event.screenY);
+      console.log('overimagen', event);
+      this.showAnimation = true;
     },
-    overImageLeave() {
-      console.log('overImageLeave');
+    overImageLeave(event) {
+      console.log('overImageLeave', event);
+      this.showAnimation = false;
     },
     getImgCSS(isMouseOver) {
       // No evento de hover, a imagem aumenta o brilho e recebe zoom

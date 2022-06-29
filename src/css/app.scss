@@ -367,6 +367,7 @@ progress::-moz-progress-bar {
 .angry-grid {
   display: grid;
   font-family: 'Jost', sans-serif;
+  font-weight: 200;
   grid-template-rows: 0.1fr 0.1fr 0.02fr 0.1fr 0.2fr 0.2fr 0.1fr 0.1fr;
   grid-template-columns: 0.5fr 0.5fr 0.1fr 0.3fr 0.2fr 0.2fr 0.1fr 1fr;
   gap: 0px;
@@ -421,14 +422,96 @@ progress::-moz-progress-bar {
   grid-column-end: 9;
   
 }
+svg {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  pointer-events: none;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.nobackground {
+  background: none;
+}
+.animationsvg{
+  animation: firstAnimation 3s linear forwards infinite;
+}
+@keyframes firstAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes colortxt {
+  0% {color:383330;}
+  100%{color:#42b883}
+}
 #item-5 {
-  font-size: clamp(1em,2.5vw,1.5em);
+ 
   grid-row-start: 4;
   grid-column-start: 1;
-
+  color: #383330;
+  p {
+    font-size: clamp(1em,2.5vw,1.5em);
+  }
   grid-row-end: 7;
   grid-column-end: 3;
-  
+
+  mark.independence {
+    color: #463333;
+    font-size: clamp(0.8em,0.7vw,0.8em);
+    font-weight: 400;
+    background: none;
+  }
+  mark.greenvue {
+    animation: colortxt 2s infinite;
+    background: none;
+  }
+  mark.pythonblue {
+    color: #336fa1;
+    background: none;
+  }
+  mark.pythonyellow {
+    color: #ffd343;
+    background: none;
+  }
+  mark.redangular {
+    color: #dd0031;
+    background: none;
+  }
+  mark.greentwig {
+    color: #bacf29;
+    background: none;
+  }
+  mark.purplephp {
+    color: #8892BF;
+    background: none;
+  }
+  mark.bluego {
+    color: #79d4fd;
+    background: none;
+  }
+  mark.svgstyle {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.03fr 0.06fr 0.06fr 1fr;
+    background: none;
+    .svgFolder{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+    .loveFolder{
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 }
 #item-6 {
   grid-row-start: 6;
