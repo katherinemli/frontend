@@ -175,10 +175,11 @@ export default {
       showMap: false,
       svgcircle,
       showAnimation: true,
+      yPercentValue: 0,
+      startValue: '',
     };
   },
   beforeMount() {
-
   },
   methods: {
     overImageEnter(event) {
@@ -242,15 +243,39 @@ export default {
       gsap.to(titleReveal1, {
         scrollTrigger: {
           trigger: '.angry-grid',
-          start: 'top top',
-          scrub: true,
+          start: this.startValue,
+          end: 'center top',
+          toggleClass: 'active',
+          toggleActions: 'restart resume reverse reverse',
+          scrub: 2,
           markers: true,
         },
-        y: 800,
+        yPercent: this.yPercentValue,
       });
     },
+    myEventHandler() {
+      console.log(window.innerHeight);
+      // console.log(window.innerWidth);
+      // your code for handling resize...
+    },
+  },
+  created() {
+    window.addEventListener('resize', this.myEventHandler);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.myEventHandler);
   },
   mounted() {
+    console.log('window.innerHeight:', window.innerHeight);
+    this.startValue = 'center center';
+    this.yPercentValue = 350;
+    if (window.innerHeight >= 615) {
+      this.yPercentValue = 900;
+    } else {
+      // smartphone
+      this.yPercentValue = 600;
+      this.startValue = 'top top';
+    }
     ScrollTrigger.refresh();
     // this.animationOnEnter();
     this.animationOnLeave();
