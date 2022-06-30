@@ -442,10 +442,6 @@ svg {
     stroke-dashoffset: 0;
   }
 }
-@keyframes colortxt {
-  0% {color:383330;}
-  100%{color:#42b883}
-}
 #item-5 {
  
   grid-row-start: 4;
@@ -464,7 +460,7 @@ svg {
     background: none;
   }
   mark.greenvue {
-    animation: colortxt 2s infinite;
+    color:#42b883;
     background: none;
   }
   mark.pythonblue {
@@ -472,7 +468,7 @@ svg {
     background: none;
   }
   mark.pythonyellow {
-    color: #ffd343;
+    color: #d8ae22;
     background: none;
   }
   mark.redangular {
@@ -520,6 +516,12 @@ svg {
   grid-row-end: 9;
   grid-column-end: 9;
   
+}
+.workTitle {
+  color: #463333;
+  font-size: clamp(0.8em,0.7vw,0.8em);
+  font-weight: 400;
+  background: none;
 }
 @media screen and (min-width: 100px) and (max-width: 600px) { 
   .angry-grid {

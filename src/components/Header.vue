@@ -6,7 +6,7 @@
   <div class="item-2 gsRevealFromLeft" id="item-2" ref="titleReveal2">
     a Fullstack Developer
   </div>
-  <div
+<div
   @mouseenter="overImageEnter"
   @mouseleave="overImageLeave" class="item-3" id="item-3" ref="imgReveal">
 <!--     <img
@@ -22,7 +22,7 @@
       "width: 100%;
       height: 100%;"
       /> -->
-      <Popout/>
+     <!--  <Popout/> -->
   </div>
   <div id="item-4" class="gsRevalFromRight"
   ref="basedCanada">
@@ -163,34 +163,31 @@
 <script>
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import svgcircle from 'assets/cicle.svg';
-import Popout from './Popout.vue';
+// import Popout from './Popout.vue';
 
 export default {
   name: 'Header',
   components: {
-    Popout,
+    // Popout,
   },
   data() {
     return {
       showMap: false,
       svgcircle,
-      showAnimation: false,
+      showAnimation: true,
     };
   },
   beforeMount() {
 
   },
-  mounted() {
-    this.gsapAnimation();
-  },
   methods: {
     overImageEnter(event) {
       console.log('overimagen', event);
-      this.showAnimation = true;
+      // this.showAnimation = true;
     },
     overImageLeave(event) {
       console.log('overImageLeave', event);
-      this.showAnimation = false;
+      // this.showAnimation = false;
     },
     getImgCSS(isMouseOver) {
       // No evento de hover, a imagem aumenta o brilho e recebe zoom
@@ -207,118 +204,56 @@ export default {
         scaleY: 1,
       };
     },
-    gsapAnimation() {
+    animationOnEnter() {
       // const { headerbox, item3, item3img } = this.$refs;
       const {
-        aboutMeReveal,
-        imgReveal,
+        // aboutMeReveal,
+        // imgReveal,
         // titleReveal0,
         titleReveal1,
-        titleReveal2,
+        // titleReveal2,
         // titleReveal21,
-        basedCanada,
-        links,
+        // basedCanada,
+        // links,
       } = this.$refs;
       const gsap = this.$gsap;
-      const hide = (elem) => gsap.set(elem, { autoAlpha: 0 });
-      ScrollTrigger.create({
-        trigger: imgReveal,
-        onEnter: () => this.animateFromImage(imgReveal),
-        onEnterBack: () => this.animateFromImage(imgReveal, -1),
-        onLeave: () => hide(imgReveal),
-      });
-      ScrollTrigger.create({
-        trigger: aboutMeReveal,
-        onEnter: () => this.animateFrom(aboutMeReveal),
-        onEnterBack: () => this.animateFrom(aboutMeReveal, -1),
-        onLeave: () => hide(aboutMeReveal),
-      });
-      /*       ScrollTrigger.create({
-        trigger: titleReveal0,
-        onEnter: () => this.animateFrom(titleReveal0),
-        onEnterBack: () => this.animateFrom(titleReveal0, -1),
-        onLeave: () => hide(titleReveal0),
-      }); */
-      ScrollTrigger.create({
-        trigger: titleReveal1,
-        onEnter: () => this.animateFrom(titleReveal1),
-        onEnterBack: () => this.animateFrom(titleReveal1, -1),
-        onLeave: () => hide(titleReveal1),
-      });
-      ScrollTrigger.create({
-        trigger: titleReveal2,
-        onEnter: () => this.animateFrom(titleReveal2),
-        onEnterBack: () => this.animateFrom(titleReveal2, -1),
-        onLeave: () => hide(titleReveal2),
-      });
-      /*       ScrollTrigger.create({
-        trigger: titleReveal21,
-        onEnter: () => this.animateFrom(titleReveal21),
-        onEnterBack: () => this.animateFrom(titleReveal21, -1),
-        onLeave: () => hide(titleReveal21),
-      }); */
-      ScrollTrigger.create({
-        trigger: basedCanada,
-        onEnter: () => this.animateFrom(basedCanada),
-        onEnterBack: () => this.animateFrom(basedCanada, -1),
-        onLeave: () => hide(basedCanada),
-      });
-      ScrollTrigger.create({
-        trigger: links,
-        onEnter: () => this.animateFrom(links),
-        onEnterBack: () => this.animateFrom(links, -1),
-        onLeave: () => hide(links),
-      });
-    },
-    animateFrom(elem, direction = 1) {
-      const gsap = this.$gsap;
-      let x = 0;
-      let y = direction * 50;
-      if (elem.classList.contains('gsRevealFromLeft')) {
-        x = -50;
-        y = 0;
-      } else if (elem.classList.contains('gsRevalFromRight')) {
-        x = 50;
-        y = 0;
-      }
 
-      gsap.fromTo(
-        elem,
-        { x, y },
-        {
-          duration: 2,
-          x: 0,
-          y: 0,
-          ease: 'expo',
-          overwrite: 'auto',
-        },
-      );
+      /* eslint new-cap: ["error", { "newIsCap": false }] */
+      const heroAnim = new gsap.timeline();
+      heroAnim.from(titleReveal1, {
+        y: '-100%',
+        duration: 1.5,
+        ease: 'power1.inOut',
+      }, 0);
     },
-    animateFromImage(elem, direction = 1) {
+    animationOnLeave() {
+      // const { headerbox, item3, item3img } = this.$refs;
+      const {
+        // aboutMeReveal,
+        // imgReveal,
+        // titleReveal0,
+        titleReveal1,
+        // titleReveal2,
+        // titleReveal21,
+        // basedCanada,
+        // links,
+      } = this.$refs;
       const gsap = this.$gsap;
-      let x = 0;
-      let y = direction * 50;
-      if (elem.classList.contains('gsRevealFromLeft')) {
-        x = -50;
-        y = 0;
-      } else if (elem.classList.contains('gsRevalFromRight')) {
-        x = 50;
-        y = 0;
-      }
-
-      gsap.fromTo(
-        elem,
-        { x, y, scale: 0.5 },
-        {
-          duration: 2,
-          x: 0,
-          y: 0,
-          scale: 1,
-          ease: 'expo',
-          overwrite: 'auto',
+      gsap.to(titleReveal1, {
+        scrollTrigger: {
+          trigger: '.angry-grid',
+          start: 'top top',
+          scrub: true,
+          markers: true,
         },
-      );
+        y: 800,
+      });
     },
+  },
+  mounted() {
+    ScrollTrigger.refresh();
+    // this.animationOnEnter();
+    this.animationOnLeave();
   },
 };
 </script>

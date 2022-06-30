@@ -1,7 +1,8 @@
 <template>
   <q-layout class="background-color-set" view="hHr lpR fFf">
      <q-resize-observer @resize="onResize" />
-<q-header v-if="drawerState" reveal class="background-color-set" height-hint="98">
+<q-header style="visibility: hidden;"
+v-if="drawerState" reveal class="background-color-set" height-hint="98">
       <div class="noise-overlay"></div>
       <div ref="cursor"></div>
       <div ref="cursorFollower"></div>
