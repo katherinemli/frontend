@@ -248,7 +248,6 @@ export default {
           toggleClass: 'active',
           toggleActions: 'restart resume reverse reverse',
           scrub: 3,
-          markers: true,
         },
         yPercent: this.yPercentValue,
       });
@@ -260,7 +259,6 @@ export default {
           toggleClass: 'active',
           toggleActions: 'restart resume reverse reverse',
           scrub: 3,
-          markers: true,
         },
         xPercent: -104,
       });
@@ -272,7 +270,6 @@ export default {
           toggleClass: 'active',
           toggleActions: 'restart resume reverse reverse',
           scrub: 3,
-          markers: true,
         },
         xPercent: 104,
       });
