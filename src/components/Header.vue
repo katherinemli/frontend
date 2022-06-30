@@ -222,7 +222,7 @@ export default {
       /* eslint new-cap: ["error", { "newIsCap": false }] */
       const heroAnim = new gsap.timeline();
       heroAnim.from(titleReveal1, {
-        y: '-100%',
+        y: '-50%',
         duration: 1.5,
         ease: 'power1.inOut',
       }, 0);
@@ -230,13 +230,13 @@ export default {
     animationOnLeave() {
       // const { headerbox, item3, item3img } = this.$refs;
       const {
-        // aboutMeReveal,
+        aboutMeReveal,
         // imgReveal,
         // titleReveal0,
         titleReveal1,
-        // titleReveal2,
+        titleReveal2,
         // titleReveal21,
-        // basedCanada,
+        basedCanada,
         // links,
       } = this.$refs;
       const gsap = this.$gsap;
@@ -247,10 +247,46 @@ export default {
           end: 'center top',
           toggleClass: 'active',
           toggleActions: 'restart resume reverse reverse',
-          scrub: 2,
+          scrub: 3,
           markers: true,
         },
         yPercent: this.yPercentValue,
+      });
+      gsap.to(aboutMeReveal, {
+        scrollTrigger: {
+          trigger: '.angry-grid',
+          start: this.startValue,
+          end: 'center top',
+          toggleClass: 'active',
+          toggleActions: 'restart resume reverse reverse',
+          scrub: 3,
+          markers: true,
+        },
+        xPercent: -104,
+      });
+      gsap.to(titleReveal2, {
+        scrollTrigger: {
+          trigger: '.angry-grid',
+          start: this.startValue,
+          end: 'center top',
+          toggleClass: 'active',
+          toggleActions: 'restart resume reverse reverse',
+          scrub: 3,
+          markers: true,
+        },
+        xPercent: 104,
+      });
+      gsap.to(basedCanada, {
+        scrollTrigger: {
+          trigger: '.angry-grid',
+          start: this.startValue,
+          end: 'center top',
+          toggleClass: 'active',
+          toggleActions: 'restart resume reverse reverse',
+          scrub: 3,
+          markers: true,
+        },
+        xPercent: 104,
       });
     },
     myEventHandler() {
@@ -276,7 +312,7 @@ export default {
       this.startValue = 'top top';
     }
     ScrollTrigger.refresh();
-    // this.animationOnEnter();
+    this.animationOnEnter();
     this.animationOnLeave();
   },
 };
