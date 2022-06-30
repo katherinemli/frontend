@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-      <div class="workBox" style="height:100vh; background-color: red;">
+      <div class="workBox" style="height:100vh;">
     <mark class="workTitle">Work</mark>
   </div>
   </div>
