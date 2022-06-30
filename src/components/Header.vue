@@ -284,7 +284,6 @@ export default {
           toggleClass: 'active',
           toggleActions: 'restart resume reverse reverse',
           scrub: 3,
-          markers: true,
         },
         xPercent: 104,
       });
