@@ -267,13 +267,12 @@ export default {
   },
   mounted() {
     console.log('window.innerHeight:', window.innerHeight);
-    this.startValue = 'center center';
-    this.yPercentValue = 350;
-    if (window.innerHeight >= 615) {
+    if (window.innerWidth >= 850) {
+      this.startValue = 'center center';
       this.yPercentValue = 900;
     } else {
       // smartphone
-      this.yPercentValue = 600;
+      this.yPercentValue = 1050;
       this.startValue = 'top top';
     }
     ScrollTrigger.refresh();
