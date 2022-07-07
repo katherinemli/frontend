@@ -10,15 +10,15 @@
         class='icon-svg'>
         </svg> -->
         <!-- <q-icon v-html="$options.filters.svg('home')" ></q-icon> -->
-        <q-icon size="10vw" :name="girlSvg" />
+        <q-icon size="5vw" :name="svgFilled" />
       </div>
       <div class="body-work-card-info">
         <div>{{titulo}}
-    <q-btn :dense="$q.screen.xs" no-caps label="Hair" icon-right="colorize" color="secondary">
+<!--     <q-btn :dense="$q.screen.xs" no-caps label="Hair" icon-right="colorize" color="secondary">
       <q-popup-proxy transition-show="scale" transition-hide="scale">
         <q-color v-model="colorFace" />
       </q-popup-proxy>
-    </q-btn>
+    </q-btn> -->
         </div>
         <div>{{texto}}</div>
       </div>
@@ -27,8 +27,6 @@
 </template>
 
 <script>
-// eslint-disable-next-line
-import svg from '!!raw-loader?!assets/icons.svg';
 
 const props = {
   titulo: {
@@ -43,6 +41,10 @@ const props = {
     type: String,
     default: '',
   },
+  svgvalue: {
+    type: String,
+    default: '',
+  },
 };
 
 export default {
@@ -50,20 +52,15 @@ export default {
   name: 'WorksCard',
   data() {
     return {
-      svg,
       showMap: false,
       showAnimation: true,
       colorFace: '#9B4E5A',
     };
   },
   computed: {
-    girlSvg() {
-      // console.log('svg:', `img:data:image/svg+xml;charset=utf8,${this.svg}`);
-      // console.log(this.fillOcurrences(this.svg));
-      // eslint-disable-next-line
-      //const svgColored = this.svg.replaceAll('#', '%23');
-      // eslint-disable-next-line
-      const svgColored = this.fillOcurrences(this.svg, this.colorFace);
+    svgFilled() {
+      // const svgColored = this.fillOcurrences(this.svgvalue, this.colorFace);
+      const svgColored = this.fillOriginal(this.svgvalue);
       return `img:data:image/svg+xml;charset=utf8,${svgColored}`;
     },
   },
@@ -79,6 +76,9 @@ export default {
         indexOccurence = str.indexOf(searchKeyword, indexOccurence + 1);
       }
       return str;
+    },
+    fillOriginal(str) {
+      return str.replaceAll('#', '%23');
     },
   },
 };
