@@ -1,22 +1,20 @@
 <template>
   <div>
-    <Header />
-      <div class="workBox" style="height:100vh;">
-    <mark class="workTitle">Work</mark>
-  </div>
+    <!-- <Header /> -->
+    <Works />
   </div>
 </template>
 <script>
-import Header from 'src/components/Header.vue';
-// import Works from 'src/components/Works.vue';
+// import Header from 'src/components/Header.vue';
+import Works from 'src/components/Works.vue';
 import SCENE_1 from './scene1.json';
 import SCENE_2 from './scene2.json';
 
 export default {
   name: 'PageIndex',
   components: {
-    Header,
-    // Works,
+    // Header,
+    Works,
   },
   data() {
     return {

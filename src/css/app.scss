@@ -653,3 +653,44 @@ svg {
   grid-column-end: 3;
   
 }
+.workBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body-work-card {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  justify-content: center;
+}
+.body-work-card:nth-child(n) {
+} 
+.body-work-card-icon {
+  width: 20vw;
+  height: 20vh;
+  flex: 0 0 20vw;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body-work-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  flex: 0 0 20vw;
+  flex-grow: 0;
+}
+.body-work-card-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  flex: 0 0 20vw;
+  flex-grow: 0;
+}
+/* .icon-svg:before{
+  content : url("~assets/icon1.svg");
+} */

@@ -26,6 +26,7 @@ module.exports = function (/* ctx */) {
       'i18n',
       'axios',
       'gsap',
+      'filters',
     ],
 
     // https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
@@ -71,6 +72,7 @@ module.exports = function (/* ctx */) {
       chainWebpack(chain) {
         chain.plugin('eslint-webpack-plugin')
           .use(ESLintPlugin, [{ extensions: ['js', 'vue'] }]);
+        // chain.
       },
     },
 
@@ -193,6 +195,10 @@ module.exports = function (/* ctx */) {
       extendWebpack(/* cfg */) {
         // do something with Electron main process Webpack cfg
         // chainWebpack also available besides this extendWebpack
+        /*         cfg.module.rules.push({
+          test: /\.svg$/,
+          loader: 'raw-loader'
+        }); */
       },
     },
   };
