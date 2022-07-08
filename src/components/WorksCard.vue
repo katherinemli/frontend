@@ -1,21 +1,22 @@
 <template>
   <div v-intersection="onIntersection"
-  @mouseover="overHover()" @mouseleave="leaveHover()" class="body-work-card">
+  @mouseover="overHover()" @mouseleave="leaveHover()" ref="bodyworkcard" class="body-work-card">
     <div ref="svgFilled" class="body-work-card-icon">
-      <q-icon size="5vw" :name="svgFilled" />
-      <q-icon size="5vw" :name="svgFilledChanged" />
+      <q-icon size="10vw" :name="svgFilled" />
+      <!-- <q-icon size="5vw" :name="svgFilledChanged" /> -->
     </div>
-    <div class="body-work-card-info">
-      <div>{{titulo}} visible:{{visible}}
+    <div ref="bodyworkcardinfo" class="body-work-card-info">
+      <div ref="bodyworkcardinfoTitle">
+        {{titulo}}
       </div>
       <div>{{texto}}</div>
     </div>
-    <div class="body-work-card-date">{{fecha}}</div>
+    <div ref="bodyworkcarddate" class="body-work-card-date">{{fecha}}</div>
   </div>
 </template>
 
 <script>
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const props = {
   titulo: {
@@ -64,7 +65,7 @@ export default {
   methods: {
     onIntersection(entry) {
       this.visible = entry.isIntersecting;
-      ScrollTrigger.refresh();
+      // ScrollTrigger.refresh();
       this.animationOnEnter();
     },
     animationOnEnter() {
@@ -78,16 +79,43 @@ export default {
         // titleReveal21,
         // basedCanada,
         // links,
+        bodyworkcard,
+        // bodyworkcardinfo,
+        bodyworkcardinfoTitle,
+        // bodyworkcarddate,
       } = this.$refs;
       const gsap = this.$gsap;
 
       /* eslint new-cap: ["error", { "newIsCap": false }] */
-      const heroAnim = new gsap.timeline();
+      /*       const heroAnim = new gsap.timeline();
       heroAnim.from(svgFilled, {
         x: '-50%',
         duration: 1.5,
         ease: 'power1.inOut',
-      }, 0);
+      }, 0); */
+      gsap.to(svgFilled, {
+        scrollTrigger: {
+          trigger: bodyworkcard,
+          start: 'top 60%',
+          // toggleActions: 'restart resume reverse reverse',
+          toggleActions: 'play pause resume reset',
+          scrub: true,
+        },
+        opacity: 0,
+        duration: 1.5,
+        scale: 2,
+      });
+      gsap.to(bodyworkcardinfoTitle, {
+        scrollTrigger: {
+          trigger: bodyworkcard,
+          start: 'top 40%',
+          scrub: true,
+          toggleActions: 'restart resume reverse reverse',
+        },
+        y: '-30',
+        duration: 1,
+        transformOrigin: 'center center',
+      });
     },
     fillOcurrences(str, color) {
       const colorString = color.replace('#', '%23');

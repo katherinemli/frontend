@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <Header />
-    <Works />
+  <div ref="pagbox">
+    <Header ref="headerbox"/>
+    <Works ref="worksbox"/>
   </div>
 </template>
 <script>
@@ -29,8 +29,32 @@ export default {
 
   },
   mounted() {
+    this.animationOnEnter();
   },
   methods: {
+    animationOnEnter() {
+      // const { headerbox, item3, item3img } = this.$refs;
+      const {
+        pagbox,
+        // headerbox,
+        // worksbox,
+      } = this.$refs;
+      const gsap = this.$gsap;
+
+      /* eslint new-cap: ["error", { "newIsCap": false }] */
+      // const bgAnimation = new gsap.timeline();
+      gsap.to(pagbox, {
+        scrollTrigger: {
+          start: 'top',
+          toggleActions: 'restart resume reverse reverse',
+          scrub: true,
+        },
+        backgroundColor: '#808eab',
+        lazy: false,
+        duration: 1.5,
+        ease: 'power1.inOut',
+      }, 1);
+    },
   },
 };
 </script>

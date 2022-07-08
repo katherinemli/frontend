@@ -1,5 +1,5 @@
 <template>
-<div class="angry-grid">
+<div class="angry-grid" ref="boxheadercomponent">
     <div class="item-1 gsRevealFromLeft" id="item-1" ref="titleReveal1">
     I'm Katherine Liberona
   </div>
@@ -9,10 +9,10 @@
 <div
   @mouseenter="overImageEnter"
   @mouseleave="overImageLeave" class="item-3" id="item-3" ref="imgReveal">
-<!--     <img
+    <img
       src="~assets/pp.png"
       id="companyLogo"
-      /> -->
+      />
 <!--     <img
     @mouseenter="overImageEnter" @mouseleave="overImageLeave"
       ref="item3img"
@@ -230,28 +230,31 @@ export default {
     animationOnLeave() {
       // const { headerbox, item3, item3img } = this.$refs;
       const {
-        aboutMeReveal,
+        // aboutMeReveal,
+        boxheadercomponent,
         // imgReveal,
         // titleReveal0,
         titleReveal1,
-        titleReveal2,
+        // titleReveal2,
         // titleReveal21,
-        basedCanada,
+        // basedCanada,
         // links,
       } = this.$refs;
       const gsap = this.$gsap;
       gsap.to(titleReveal1, {
         scrollTrigger: {
-          trigger: '.angry-grid',
-          start: this.startValue,
-          end: 'center top',
+          trigger: boxheadercomponent,
+          // start: this.startValue,
+          start: 'top top',
+          // end: 'center center',
           toggleClass: 'active',
-          toggleActions: 'restart resume reverse reverse',
-          scrub: 3,
+          toggleActions: 'play pause resume reset',
+          scrub: 1,
         },
-        yPercent: this.yPercentValue,
+        yPercent: 900,
+        // yPercent: this.yPercentValue,
       });
-      gsap.to(aboutMeReveal, {
+      /*       gsap.to(aboutMeReveal, {
         scrollTrigger: {
           trigger: '.angry-grid',
           start: this.startValue,
@@ -283,7 +286,7 @@ export default {
           scrub: 3,
         },
         xPercent: 104,
-      });
+      }); */
     },
     myEventHandler() {
       console.log(window.innerHeight);
@@ -301,14 +304,14 @@ export default {
     console.log('window.innerHeight:', window.innerHeight);
     if (window.innerWidth >= 850) {
       this.startValue = 'center center';
-      this.yPercentValue = 900;
+      this.yPercentValue = 1000;
     } else {
       // smartphone
       this.yPercentValue = 1050;
       this.startValue = 'top top';
     }
     ScrollTrigger.refresh();
-    this.animationOnEnter();
+    // this.animationOnEnter();
     this.animationOnLeave();
   },
 };

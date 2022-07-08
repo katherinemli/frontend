@@ -1,7 +1,7 @@
 <template>
-  <q-layout class="background-color-set" view="hHr lpR fFf">
+  <q-layout view="hHr lpR fFf">
      <q-resize-observer @resize="onResize" />
-<q-header
+<!-- <q-header
 v-if="drawerState" reveal class="background-color-set" height-hint="98">
       <div class="noise-overlay"></div>
       <div ref="cursor"></div>
@@ -41,19 +41,31 @@ v-if="drawerState" reveal class="background-color-set" height-hint="98">
           Routing
         </q-toolbar-title>
       </q-toolbar>
-    </q-header>
+    </q-header> -->
+    <q-page-sticky expand position="top">
+      <q-toolbar class="text-black">
+        <q-avatar>
+          <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+        </q-avatar>
+        <q-toolbar-title>
+          Page Title
+        </q-toolbar-title>
+      </q-toolbar>
+    </q-page-sticky>
+    <div class="noise-overlay"></div>
     <q-page-container >
-      <q-tab-panels ref="paneltab" v-model="tab" animated class="background-color-set">
-        <q-tab-panel name="index">
+      <router-view/>
+<!--       <q-tab-panels ref="paneltab" v-model="tab" class="background-color-set">
+        <q-tab-panel class="q-ma-none q-pa-none" name="index">
           <router-view/>
-        </q-tab-panel>
-        <q-tab-panel name="map">
+        </q-tab-panel> -->
+<!--         <q-tab-panel name="map">
           <router-view/>
         </q-tab-panel>
         <q-tab-panel name="graph">
           <router-view/>
-        </q-tab-panel>
-      </q-tab-panels>
+        </q-tab-panel> -->
+      <!-- </q-tab-panels> -->
     </q-page-container>
 
   </q-layout>

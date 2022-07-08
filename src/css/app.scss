@@ -368,10 +368,10 @@ progress::-moz-progress-bar {
   display: grid;
   font-family: 'Jost', sans-serif;
   font-weight: 200;
-  grid-template-rows: 0.1fr 0.1fr 0.02fr 0.1fr 0.2fr 0.2fr 0.1fr 0.1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.02fr 0.1fr 0.2fr 0.2fr 0.1fr 1fr;
   grid-template-columns: 0.5fr 0.5fr 0.1fr 0.3fr 0.2fr 0.2fr 0.1fr 1fr;
   gap: 0px;
-  height: 100vh;
+  height: 100%;
 }
 #item-0 {
   grid-row-start: 1;
@@ -409,7 +409,7 @@ progress::-moz-progress-bar {
   font-size: clamp(2em,5vw,3em);
   grid-row-start: 3;
   grid-column-start: 4;
-  grid-row-end: 8;
+  grid-row-end: 9;
   grid-column-end: 7;
   
 }
@@ -443,14 +443,14 @@ svg {
   }
 }
 #item-5 {
- 
+  padding-left: 2%;
   grid-row-start: 4;
   grid-column-start: 1;
   color: #383330;
   p {
     font-size: clamp(1em,2.5vw,1.5em);
   }
-  grid-row-end: 7;
+  grid-row-end: 9;
   grid-column-end: 3;
 
   mark.independence {
@@ -662,6 +662,7 @@ svg {
   display: flex;
   flex-direction: row;
   width: 90vw;
+  height: 50vh;
   justify-content: center;
 }
 .body-work-card:nth-child(n) {
@@ -677,6 +678,9 @@ svg {
 }
 .body-work-card-info {
   display: flex;
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
   flex-direction: column;
   align-items: center;
   width: 20vw;
@@ -685,6 +689,9 @@ svg {
 }
 .body-work-card-date {
   display: flex;
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
   flex-direction: column;
   align-items: center;
   width: 20vw;
