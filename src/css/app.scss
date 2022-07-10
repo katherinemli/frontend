@@ -143,10 +143,10 @@ html, body, #app, #q-app {
 .my-card {
   flex: 0 1 calc(20% - 8px);
 }
-.box { 
-  height: 60px; 
-  width: 60px; 
-  background: red; 
+.box {
+  height: 60px;
+  width: 60px;
+  background: red;
 }
 section {
   min-height: 100vh;
@@ -187,7 +187,7 @@ progress::-moz-progress-bar {
 }
 .hero-section {
   overflow: hidden !important;
-  
+
   .section-container {
       position: relative;
       display: flex;
@@ -197,7 +197,7 @@ progress::-moz-progress-bar {
       height: 30vh;
       margin: 0 auto;
       max-width: 1600px;
-      width: 100%; 
+      width: 100%;
       margin-bottom: 100px;
 
       .hero-logo {
@@ -215,7 +215,7 @@ progress::-moz-progress-bar {
 
           .circle-red {
               -webkit-clip-path: circle(50% at 50% 50%);
-              clip-path: circle(50% at 50% 50%); 
+              clip-path: circle(50% at 50% 50%);
               background-color: #be1e2d;
               width: 160px;
               height: 160px;
@@ -223,7 +223,7 @@ progress::-moz-progress-bar {
 
               .img-circle-red {
                   -webkit-clip-path: circle(50% at 50% 50%);
-                  clip-path: circle(50% at 50% 50%); 
+                  clip-path: circle(50% at 50% 50%);
                   position: absolute;
                   top: 0;
                   left: 0;
@@ -254,7 +254,7 @@ progress::-moz-progress-bar {
 
           .circle-yellow {
               -webkit-clip-path: circle(50% at 50% 50%);
-              clip-path: circle(50% at 50% 50%); 
+              clip-path: circle(50% at 50% 50%);
               background-color: #ffde17;
               width: 160px;
               height: 160px;
@@ -262,7 +262,7 @@ progress::-moz-progress-bar {
 
               .img-circle-yellow {
                   -webkit-clip-path: circle(50% at 50% 50%);
-                  clip-path: circle(50% at 50% 50%); 
+                  clip-path: circle(50% at 50% 50%);
                   position: absolute;
                   top: 0;
                   left: 0;
@@ -279,16 +279,16 @@ progress::-moz-progress-bar {
           bottom: 25px;
           right: 40px;
 
-          .arrow-down {   
+          .arrow-down {
               width: 33px;
               height: 33px;
               cursor: pointer;
           }
       }
-  } 
+  }
 }
 
-@media screen and (min-width: 100px) and (max-width: 600px) { 
+@media screen and (min-width: 100px) and (max-width: 600px) {
   .hero-section {
       .section-container  {
           .arrow-container {
@@ -327,14 +327,14 @@ progress::-moz-progress-bar {
       }
   }
 }
-@media screen and (min-width: 1600px) { 
+@media screen and (min-width: 1600px) {
 .hero-section {
       .section-container  {
           .arrow-container {
               right: 10%;
           }
       }
-  } 
+  }
 }
 @media (max-width: $breakpoint-xs-max){
   .txt-box-style {
@@ -387,7 +387,7 @@ progress::-moz-progress-bar {
 
   grid-row-end: 2;
   grid-column-end: 9;
-  
+
 }
 #item-2 {
   grid-row-start: 2;
@@ -395,7 +395,7 @@ progress::-moz-progress-bar {
   font-size: clamp(2em,5vw,3em);
   grid-row-end: 3;
   grid-column-end: 9;
-  
+
 }
 #item-2-1 {
   grid-row-start: 2;
@@ -403,7 +403,7 @@ progress::-moz-progress-bar {
   font-size: clamp(2em,5vw,3em);
   grid-row-end: 4;
   grid-column-end: 6;
-  
+
 }
 #item-3 {
   font-size: clamp(2em,5vw,3em);
@@ -411,7 +411,7 @@ progress::-moz-progress-bar {
   grid-column-start: 4;
   grid-row-end: 9;
   grid-column-end: 7;
-  
+
 }
 #item-4 {
   font-size: clamp(2em,5vw,3em);
@@ -420,7 +420,7 @@ progress::-moz-progress-bar {
 
   grid-row-end: 5;
   grid-column-end: 9;
-  
+
 }
 svg {
   stroke-dasharray: 1000;
@@ -515,7 +515,7 @@ svg {
   font-size: clamp(1em,2.5vw,1.5em);
   grid-row-end: 9;
   grid-column-end: 9;
-  
+
 }
 .workTitle {
   color: #463333;
@@ -523,14 +523,14 @@ svg {
   font-weight: 400;
   background: none;
 }
-@media screen and (min-width: 100px) and (max-width: 600px) { 
+@media screen and (min-width: 100px) and (max-width: 600px) {
   .angry-grid {
     display: grid;
     grid-template-rows: 0.1fr 0.05fr 0.1fr 0.1fr 0.1fr 0.1fr 0.07fr 0.1fr 1fr 0.06fr 0.1fr 0.1fr;
     grid-template-columns: 0.02fr 0.2fr 0.7fr 0.1fr;
-    
+
     gap: 0px;
-    height: 100%; 
+    height: 100%;
   }
   #item-0 {
     grid-row-start: 1;
@@ -538,7 +538,7 @@ svg {
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 4;
-    
+
   }
   #item-1 {
     font-size: clamp(2em,5vw,3em);
@@ -616,7 +616,7 @@ svg {
   grid-template-columns: 0.1fr 1fr 0.1fr;
 }
 .container-inner:hover {
- 
+
   .popoutimg1{
     //transform: scale(1) translateY(0);
     //transform-origin: 50% top;
@@ -624,7 +624,7 @@ svg {
 
   }
   .popoutcircle{
-    
+
   }
 }
 .popoutcircle {
@@ -651,7 +651,7 @@ svg {
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
-  
+
 }
 .workBox{
   display: flex;
@@ -666,7 +666,7 @@ svg {
   justify-content: center;
 }
 .body-work-card:nth-child(n) {
-} 
+}
 .body-work-card-icon {
   width: 20vw;
   height: 20vh;
@@ -701,3 +701,20 @@ svg {
 /* .icon-svg:before{
   content : url("~assets/icon1.svg");
 } */
+.movement-icon{
+  display: grid;
+  grid-template-rows: 0.1fr;
+  grid-template-columns: 0.1fr;
+}
+.svg-in{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.svg-out{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
