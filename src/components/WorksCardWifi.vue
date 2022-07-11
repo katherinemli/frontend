@@ -65,13 +65,13 @@ export default {
       showAnimation: true,
       colorFace: '#9B4E5A',
       visible: false,
-      sizeIcon: null,
+      sizeIcon: '10vw',
     };
   },
   watch: {
     // eslint-disable-next-line
     '$q.screen.width'() {
-      if (this.$q.screen.width > 1023) {
+      if (this.$q.screen.width > 600) {
         console.log('pantalla grande');
         this.sizeIcon = '10vw';
       } else {
