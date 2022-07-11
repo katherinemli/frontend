@@ -1,22 +1,9 @@
 <template>
   <div v-intersection="onIntersection"
   @mouseover="overHover()" @mouseleave="leaveHover()" ref="bodyworkcard" class="body-work-card">
-    <q-icon size="10vw" :name="svgFilled" />
-    <div class="movement-icon">
-      <div ref="svgFilledIn2" class="svg-in">
-        <q-icon size="10vw" :name="svgFilledIn" />
-      </div>
-      <div ref="svgFilledOut2" class="svg-out">
-        <q-icon size="10vw" :name="svgFilledOut" />
-      </div>
-    </div>
-    <div class="movement-icon">
-      <div ref="svgFilledIn" class="svg-in">
-        <q-icon size="10vw" :name="svgFilledIn" />
-      </div>
-      <div ref="svgFilledOut" class="svg-out">
-        <q-icon size="10vw" :name="svgFilledOut" />
-      </div>
+    <div ref="svgFilled" class="body-work-card-icon">
+      <q-icon size="10vw" :name="svgFilled" />
+      <!-- <q-icon size="5vw" :name="svgFilledChanged" /> -->
     </div>
     <div ref="bodyworkcardinfo" class="body-work-card-info">
       <div ref="bodyworkcardinfoTitle">
@@ -48,14 +35,6 @@ const props = {
     type: String,
     default: '',
   },
-  svgvalueIn: {
-    type: String,
-    default: '',
-  },
-  svgvalueOut: {
-    type: String,
-    default: '',
-  },
 };
 
 export default {
@@ -70,16 +49,6 @@ export default {
     };
   },
   computed: {
-    svgFilledIn() {
-      // const svgColored = this.fillOcurrences(this.svgvalue, this.colorFace);
-      const svgColored = this.fillOriginal(this.svgvalueIn);
-      return `img:data:image/svg+xml;charset=utf8,${svgColored}`;
-    },
-    svgFilledOut() {
-      // const svgColored = this.fillOcurrences(this.svgvalue, this.colorFace);
-      const svgColored = this.fillOriginal(this.svgvalueOut);
-      return `img:data:image/svg+xml;charset=utf8,${svgColored}`;
-    },
     svgFilled() {
       // const svgColored = this.fillOcurrences(this.svgvalue, this.colorFace);
       const svgColored = this.fillOriginal(this.svgvalue);
@@ -105,15 +74,11 @@ export default {
         // aboutMeReveal,
         // imgReveal,
         // titleReveal0,
-        // svgFilled,
+        svgFilled,
         // titleReveal2,
         // titleReveal21,
         // basedCanada,
         // links,
-        svgFilledIn,
-        svgFilledOut,
-        svgFilledIn2,
-        svgFilledOut2,
         bodyworkcard,
         // bodyworkcardinfo,
         bodyworkcardinfoTitle,
@@ -128,7 +93,7 @@ export default {
         duration: 1.5,
         ease: 'power1.inOut',
       }, 0); */
-      gsap.to(svgFilledOut2, {
+      gsap.to(svgFilled, {
         scrollTrigger: {
           trigger: bodyworkcard,
           start: 'top 60%',
@@ -136,43 +101,9 @@ export default {
           toggleActions: 'play pause resume reset',
           scrub: true,
         },
-        scale: 1,
-        duration: 1,
-      });
-      gsap.to(svgFilledIn2, {
-        scrollTrigger: {
-          trigger: bodyworkcard,
-          start: 'top 60%',
-          // toggleActions: 'restart resume reverse reverse',
-          toggleActions: 'play pause resume reset',
-          scrub: true,
-        },
+        opacity: 0,
+        duration: 1.5,
         scale: 2,
-        duration: 1,
-      });
-      gsap.to(svgFilledIn, {
-        scrollTrigger: {
-          trigger: bodyworkcard,
-          start: 'top 60%',
-          // toggleActions: 'restart resume reverse reverse',
-          toggleActions: 'play pause resume reset',
-          scrub: true,
-        },
-        opacity: 0,
-        duration: 1,
-      });
-      gsap.to(svgFilledOut, {
-        scrollTrigger: {
-          trigger: bodyworkcard,
-          start: 'top 60%',
-          // toggleActions: 'restart resume reverse reverse',
-          toggleActions: 'play pause resume reset',
-          scrub: true,
-        },
-        rotation: 360 * 5,
-        duration: 1,
-        opacity: 0,
-        ease: 'none',
       });
       gsap.to(bodyworkcardinfoTitle, {
         scrollTrigger: {

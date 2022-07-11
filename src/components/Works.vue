@@ -2,17 +2,11 @@
     <div ref="workBox" class="workBox">
       <mark class="workTitle">Work</mark>
       <WorksCard ref="boxcomtech"
-      :titulo="comtech"
-      :svgvalueOut="svgComtechIn"
-      :svgvalueIn="svgComtechOut"
-      :texto="txtComtech" :fecha="fecha" :svgvalue="svgComtech"/>
+      :titulo="comtech" :texto="txtComtech" :fecha="fecha" :svgvalue="svgComtech"/>
       <WorksCard ref="boxwherex"
       :titulo="wherex" :texto="txtWherex" :fecha="fecha" :svgvalue="svgWherex"/>
       <WorksCard ref="boxfalabella"
-      :titulo="falabella"
-      :svgvalueOut="svgFalabellaOut"
-      :svgvalueIn="svgFalabellaIn"
-      :texto="txtFalabella" :fecha="fecha" :svgvalue="svgFalabella"/>
+      :titulo="falabella" :texto="txtFalabella" :fecha="fecha" :svgvalue="svgFalabella"/>
       <WorksCard ref="boxcitiaps"
       :titulo="citiaps" :texto="txtCitiaps" :fecha="fecha" :svgvalue="svgCitiaps"/>
       <WorksCard ref="boxteacher"
@@ -27,17 +21,9 @@ import WorksCard from 'src/components/WorksCard.vue';
 // eslint-disable-next-line
 import svgComtech from '!!raw-loader?!assets/comtech.svg';
 // eslint-disable-next-line
-import svgComtechIn from '!!raw-loader?!assets/comtechin.svg';
-// eslint-disable-next-line
-import svgComtechOut from '!!raw-loader?!assets/comtechout.svg';
-// eslint-disable-next-line
 import svgWherex from '!!raw-loader?!assets/wherex.svg';
 // eslint-disable-next-line
 import svgFalabella from '!!raw-loader?!assets/falabella.svg';
-// eslint-disable-next-line
-import svgFalabellaIn from '!!raw-loader?!assets/falabellain.svg';
-// eslint-disable-next-line
-import svgFalabellaOut from '!!raw-loader?!assets/falabellaout.svg';
 // eslint-disable-next-line
 import svgCitiaps from '!!raw-loader?!assets/citiaps.svg';
 // eslint-disable-next-line
@@ -50,10 +36,6 @@ export default {
   },
   data() {
     return {
-      svgComtechIn,
-      svgComtechOut,
-      svgFalabellaIn,
-      svgFalabellaOut,
       showMap: false,
       showAnimation: true,
       svgComtech,
