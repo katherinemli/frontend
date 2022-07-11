@@ -677,15 +677,9 @@ svg {
   align-items: center;
 }
 .body-work-card-info {
-  display: flex;
   font-weight: 200;
   font-family: 'Jost', sans-serif;
   font-size: clamp(1em,2.5vw,1.5em);
-  flex-direction: column;
-  align-items: center;
-  width: 20vw;
-  flex: 0 0 20vw;
-  flex-grow: 0;
 }
 .body-work-card-date {
   display: flex;
@@ -723,7 +717,7 @@ svg {
     grid-row-start: 1;
     grid-column-start: 1;
     display: grid;
-    grid-template-rows: 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr;
     grid-template-columns: 0.1fr;
   }
   .body-work-card {
@@ -742,20 +736,9 @@ svg {
     align-items: center;
   }
   .body-work-card-info {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-row-end: 1;
-    grid-column-end: 3;
-    width: 100%;
-    font-weight: 200;
-    font-family: 'Jost', sans-serif;
-    font-size: clamp(1em,2.5vw,1.5em);
+
   }
-  .body-work-card-info-title{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+  .body-work-card-info-title{ 
   }
   .body-work-card-date {
     grid-row-start: 2;

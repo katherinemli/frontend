@@ -289,7 +289,6 @@ export default {
       }); */
     },
     myEventHandler() {
-      console.log(window.innerHeight);
       // console.log(window.innerWidth);
       // your code for handling resize...
     },

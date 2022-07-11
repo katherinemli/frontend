@@ -3,13 +3,13 @@
   @mouseover="overHover()" @mouseleave="leaveHover()" ref="bodyworkcard" class="body-work-card">
     <div class="icon-above">
       <div class="svg-in" ref="svgin">
-        <q-icon size="30vw" :name="svgPIn" />
+        <q-icon :size="sizeIconComputed" :name="svgPIn" />
       </div>
       <div class="svg-out" ref="svgout">
-        <q-icon size="30vw" :name="svgPout" />
+        <q-icon :size="sizeIconComputed" :name="svgPout" />
       </div>
       <div class="svg-out" ref="svgout2">
-        <q-icon size="30vw" :name="svgPout2" />
+        <q-icon :size="sizeIconComputed" :name="svgPout2" />
       </div>
     </div>
     <div ref="bodyworkcardinfo" class="body-work-card-info">
@@ -65,9 +65,25 @@ export default {
       showAnimation: true,
       colorFace: '#9B4E5A',
       visible: false,
+      sizeIcon: null,
     };
   },
+  watch: {
+    // eslint-disable-next-line
+    '$q.screen.width'() {
+      if (this.$q.screen.width > 1023) {
+        console.log('pantalla grande');
+        this.sizeIcon = '10vw';
+      } else {
+        console.log('pequena');
+        this.sizeIcon = '22vw';
+      }
+    },
+  },
   computed: {
+    sizeIconComputed() {
+      return this.sizeIcon;
+    },
     svgPIn() {
       // const svgColored = this.fillOcurrences(this.svgvalue, this.colorFace);
       const svgColored = this.fillOriginal(this.svgin);
@@ -94,7 +110,6 @@ export default {
     },
   },
   mounted() {
-    console.log('window.innerHeight:', window.innerHeight);
   },
   methods: {
     onIntersection(entry) {
