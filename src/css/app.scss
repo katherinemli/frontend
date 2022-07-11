@@ -701,3 +701,24 @@ svg {
 /* .icon-svg:before{
   content : url("~assets/icon1.svg");
 } */
+.icon-above {
+  display: grid;
+  grid-template-rows: 0.1fr;
+  grid-template-columns: 0.1fr;
+}
+.svg-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.svg-out {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}

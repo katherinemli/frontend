@@ -4,10 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { ExpoScaleEase } from 'gsap/EasePack';
 
-gsap.registerPlugin(ScrollToPlugin);
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(ExpoScaleEase);
-
 Vue.directive('gsap', (el, binding) => {
   const options = { ...binding.value };
   const { modifiers } = binding.modifiers;
@@ -30,4 +26,16 @@ Vue.directive('gsap', (el, binding) => {
 });
 
 Vue.prototype.$gsap = gsap;
-export { gsap };
+Vue.prototype.$gsapPlugins = {};
+Vue.prototype.$gsapPlugins.ScrollToPlugin = ScrollToPlugin;
+Vue.prototype.$gsapPlugins.ScrollTrigger = ScrollTrigger;
+Vue.prototype.$gsapPlugins.ExpoScaleEase = ExpoScaleEase;
+gsap.registerPlugin(
+  ...[
+    ...Object.values(Vue.prototype.$gsapPlugins),
+  ],
+);
+// Club Plugins
+
+// export { gsap };
+Vue.use(gsap);

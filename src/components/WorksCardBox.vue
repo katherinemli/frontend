@@ -1,19 +1,12 @@
 <template>
   <div v-intersection="onIntersection"
   @mouseover="overHover()" @mouseleave="leaveHover()" ref="bodyworkcard" class="body-work-card">
-    <div ref="svgFilled" class="body-work-card-icon">
-      <q-icon size="10vw" :name="svgFilled" />
-      <!-- <q-icon size="5vw" :name="svgFilledChanged" /> -->
-    </div>
     <div class="icon-above">
       <div class="svg-in" ref="svgin">
         <q-icon size="7vw" :name="svgPIn" />
       </div>
       <div class="svg-out" ref="svgout">
         <q-icon size="10vw" :name="svgPout" />
-      </div>
-      <div class="svg-out" ref="svgout2">
-        <q-icon size="10vw" :name="svgPout2" />
       </div>
     </div>
     <div ref="bodyworkcardinfo" class="body-work-card-info">
@@ -62,7 +55,7 @@ const props = {
 
 export default {
   props,
-  name: 'WorksCard',
+  name: 'WorksCardBox',
   data() {
     return {
       showMap: false,
@@ -112,16 +105,16 @@ export default {
         // aboutMeReveal,
         // imgReveal,
         // titleReveal0,
-        svgFilled,
+        // svgFilled,
         // titleReveal2,
         // titleReveal21,
         // basedCanada,
         // links,
         svgout,
-        svgout2,
+        // svgout2,
         bodyworkcard,
         // bodyworkcardinfo,
-        bodyworkcardinfoTitle,
+        // bodyworkcardinfoTitle,
         // bodyworkcarddate,
       } = this.$refs;
       const gsap = this.$gsap;
@@ -149,47 +142,15 @@ export default {
       gsap.to(svgout, {
         scrollTrigger: {
           trigger: bodyworkcard,
-          start: 'top 30%',
-          // toggleActions: 'restart resume reverse reverse',
-          toggleActions: 'play pause resume reset',
-          scrub: true,
-        },
-        opacity: -2,
-        duration: 1.5,
-      });
-      gsap.to(svgout2, {
-        scrollTrigger: {
-          trigger: bodyworkcard,
           start: 'top 60%',
           // toggleActions: 'restart resume reverse reverse',
           toggleActions: 'play pause resume reset',
           scrub: true,
         },
-        opacity: -2,
+        rotation: 360,
         duration: 1.5,
-      });
-      gsap.to(svgFilled, {
-        scrollTrigger: {
-          trigger: bodyworkcard,
-          start: 'top 60%',
-          // toggleActions: 'restart resume reverse reverse',
-          toggleActions: 'play pause resume reset',
-          scrub: true,
-        },
         opacity: 0,
-        duration: 1.5,
-        scale: 2,
-      });
-      gsap.to(bodyworkcardinfoTitle, {
-        scrollTrigger: {
-          trigger: bodyworkcard,
-          start: 'top 40%',
-          scrub: true,
-          toggleActions: 'restart resume reverse reverse',
-        },
-        y: '-30',
-        duration: 1,
-        transformOrigin: 'center center',
+        ease: 'none',
       });
     },
     fillOcurrences(str, color) {

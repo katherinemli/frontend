@@ -1,12 +1,18 @@
 <template>
     <div ref="workBox" class="workBox">
       <mark class="workTitle">Work</mark>
-      <WorksCard ref="boxcomtech"
-      :titulo="comtech" :texto="txtComtech" :fecha="fecha" :svgvalue="svgComtech"/>
+      <WorksCardWifi ref="boxcomtech"
+      :titulo="comtech" :texto="txtComtech" :fecha="fecha"
+      :svgin="svgWifi0"
+      :svgout="svgWifi1"
+      :svgout2="svgWifi2"/>
       <WorksCard ref="boxwherex"
       :titulo="wherex" :texto="txtWherex" :fecha="fecha" :svgvalue="svgWherex"/>
-      <WorksCard ref="boxfalabella"
-      :titulo="falabella" :texto="txtFalabella" :fecha="fecha" :svgvalue="svgFalabella"/>
+      <WorksCardBox ref="boxfalabella"
+      :titulo="falabella"
+      :svgin="svgBox"
+      :svgout="svgArrow"
+      :texto="txtFalabella" :fecha="fecha" :svgvalue="svgFalabella"/>
       <WorksCard ref="boxcitiaps"
       :titulo="citiaps" :texto="txtCitiaps" :fecha="fecha" :svgvalue="svgCitiaps"/>
       <WorksCard ref="boxteacher"
@@ -18,6 +24,8 @@
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import WorksCard from 'src/components/WorksCard.vue';
+import WorksCardWifi from 'src/components/WorksCardWifi.vue';
+import WorksCardBox from 'src/components/WorksCardBox.vue';
 // eslint-disable-next-line
 import svgComtech from '!!raw-loader?!assets/comtech.svg';
 // eslint-disable-next-line
@@ -28,21 +36,38 @@ import svgFalabella from '!!raw-loader?!assets/falabella.svg';
 import svgCitiaps from '!!raw-loader?!assets/citiaps.svg';
 // eslint-disable-next-line
 import svgTeacher from '!!raw-loader?!assets/teacher.svg';
+// eslint-disable-next-line
+import svgBox from '!!raw-loader?!assets/box.svg';
+// eslint-disable-next-line
+import svgArrow from '!!raw-loader?!assets/arrow.svg';
+// eslint-disable-next-line
+import svgWifi0 from '!!raw-loader?!assets/wifi0.svg';
+// eslint-disable-next-line
+import svgWifi1 from '!!raw-loader?!assets/wifi1.svg';
+// eslint-disable-next-line
+import svgWifi2 from '!!raw-loader?!assets/wifi2.svg';
 
 export default {
   name: 'Works',
   components: {
     WorksCard,
+    WorksCardWifi,
+    WorksCardBox,
   },
   data() {
     return {
+      svgWifi0,
+      svgWifi1,
+      svgWifi2,
       showMap: false,
       showAnimation: true,
       svgComtech,
       svgWherex,
+      svgArrow,
       svgFalabella,
       svgCitiaps,
       svgTeacher,
+      svgBox,
       comtech: 'Comtech',
       wherex: 'Wherex',
       falabella: 'Falabella',
