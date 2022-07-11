@@ -3,17 +3,17 @@
   @mouseover="overHover()" @mouseleave="leaveHover()" ref="bodyworkcard" class="body-work-card">
     <div class="icon-above">
       <div class="svg-in" ref="svgin">
-        <q-icon size="7vw" :name="svgPIn" />
+        <q-icon size="27vw" :name="svgPIn" />
       </div>
       <div class="svg-out" ref="svgout">
-        <q-icon size="10vw" :name="svgPout" />
+        <q-icon size="30vw" :name="svgPout" />
       </div>
     </div>
     <div ref="bodyworkcardinfo" class="body-work-card-info">
-      <div ref="bodyworkcardinfoTitle">
+      <div class="body-work-card-info-title" ref="bodyworkcardinfoTitle">
         {{titulo}}
       </div>
-      <div>{{texto}}</div>
+      <div class="body-work-card-info-text">{{texto}}</div>
     </div>
     <div ref="bodyworkcarddate" class="body-work-card-date">{{fecha}}</div>
   </div>

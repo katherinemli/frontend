@@ -3,20 +3,20 @@
   @mouseover="overHover()" @mouseleave="leaveHover()" ref="bodyworkcard" class="body-work-card">
     <div class="icon-above">
       <div class="svg-in" ref="svgin">
-        <q-icon size="10vw" :name="svgPIn" />
+        <q-icon size="30vw" :name="svgPIn" />
       </div>
       <div class="svg-out" ref="svgout">
-        <q-icon size="10vw" :name="svgPout" />
+        <q-icon size="30vw" :name="svgPout" />
       </div>
       <div class="svg-out" ref="svgout2">
-        <q-icon size="10vw" :name="svgPout2" />
+        <q-icon size="30vw" :name="svgPout2" />
       </div>
     </div>
     <div ref="bodyworkcardinfo" class="body-work-card-info">
-      <div ref="bodyworkcardinfoTitle">
+      <div class="body-work-card-info-title" ref="bodyworkcardinfoTitle">
         {{titulo}}
       </div>
-      <div>{{texto}}</div>
+      <div class="body-work-card-info-text">{{texto}}</div>
     </div>
     <div ref="bodyworkcarddate" class="body-work-card-date">{{fecha}}</div>
   </div>
@@ -117,7 +117,7 @@ export default {
         svgout2,
         bodyworkcard,
         // bodyworkcardinfo,
-        bodyworkcardinfoTitle,
+        // bodyworkcardinfoTitle,
         // bodyworkcarddate,
       } = this.$refs;
       const gsap = this.$gsap;
@@ -175,17 +175,6 @@ export default {
         opacity: 0,
         duration: 1.5,
         scale: 2,
-      });
-      gsap.to(bodyworkcardinfoTitle, {
-        scrollTrigger: {
-          trigger: bodyworkcard,
-          start: 'top 40%',
-          scrub: true,
-          toggleActions: 'restart resume reverse reverse',
-        },
-        y: '-30',
-        duration: 1,
-        transformOrigin: 'center center',
       });
     },
     fillOcurrences(str, color) {

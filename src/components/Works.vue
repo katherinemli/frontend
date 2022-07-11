@@ -1,6 +1,6 @@
 <template>
     <div ref="workBox" class="workBox">
-      <mark class="workTitle">Work</mark>
+      <div style="height:10vh;"><mark class="workTitle">Work</mark></div>
       <WorksCardWifi ref="boxcomtech"
       :titulo="comtech" :texto="txtComtech" :fecha="fecha"
       :svgin="svgWifi0"

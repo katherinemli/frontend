@@ -20,7 +20,9 @@
       <div ref="bodyworkcardinfoTitle">
         {{titulo}}
       </div>
-      <div>{{texto}}</div>
+      <div class="body-work-card-info-text">
+        {{texto}}
+      </div>
     </div>
     <div ref="bodyworkcarddate" class="body-work-card-date">{{fecha}}</div>
   </div>
