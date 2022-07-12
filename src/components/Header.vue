@@ -10,6 +10,9 @@
   @mouseenter="overImageEnter"
   @mouseleave="overImageLeave" class="item-3" id="item-3" ref="imgReveal">
     <img
+      style=
+      "width: 100%;
+      height: 100%;"
       src="~assets/pp.png"
       id="companyLogo"
       />
