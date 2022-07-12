@@ -49,7 +49,7 @@ export default {
           toggleActions: 'restart resume reverse reverse',
           scrub: true,
         },
-        backgroundColor: '#808eab',
+        backgroundColor: '#f2f2f2',
         lazy: false,
         duration: 1.5,
         ease: 'power1.inOut',

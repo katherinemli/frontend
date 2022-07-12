@@ -1,21 +1,6 @@
 <template>
   <div v-intersection="onIntersection"
   @mouseover="overHover()" @mouseleave="leaveHover()" ref="bodyworkcard" class="body-work-card">
-    <div ref="svgFilled" class="body-work-card-icon">
-      <q-icon size="10vw" :name="svgFilled" />
-      <!-- <q-icon size="5vw" :name="svgFilledChanged" /> -->
-    </div>
-    <div class="icon-above">
-      <div class="svg-in" ref="svgin">
-        <q-icon size="7vw" :name="svgPIn" />
-      </div>
-      <div class="svg-out" ref="svgout">
-        <q-icon size="10vw" :name="svgPout" />
-      </div>
-      <div class="svg-out" ref="svgout2">
-        <q-icon size="10vw" :name="svgPout2" />
-      </div>
-    </div>
     <div ref="bodyworkcardinfo" class="body-work-card-info">
       <div ref="bodyworkcardinfoTitle">
         {{titulo}}
