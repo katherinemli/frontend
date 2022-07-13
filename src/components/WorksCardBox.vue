@@ -1,12 +1,12 @@
 <template>
   <div v-intersection="onIntersection"
   @mouseover="overHover()" @mouseleave="leaveHover()" ref="bodyworkcard" class="body-work-card">
-    <div class="icon-above">
+    <div class="icon-above" ref="iconabove">
       <div class="svg-in" ref="svgin">
-        <q-icon size="27vw" :name="svgPIn" />
+        <q-icon size="7em" :name="svgPIn" />
       </div>
       <div class="svg-out" ref="svgout">
-        <q-icon size="30vw" :name="svgPout" />
+        <q-icon size="7em" :name="svgPout" />
       </div>
     </div>
     <div ref="bodyworkcardinfo" class="body-work-card-info">
@@ -116,33 +116,18 @@ export default {
         // bodyworkcardinfo,
         // bodyworkcardinfoTitle,
         // bodyworkcarddate,
+        iconabove,
       } = this.$refs;
       const gsap = this.$gsap;
-      /* eslint new-cap: ["error", { "newIsCap": false }] */
-      /*       const heroAnim = this.$gsap.timeline({ repeat: -1 });
-      heroAnim
-        .to(svgout, 1,
-          {
-            y: '-=1', x: '+=1', rotation: '-=1', ease: 'elastic.out( .5, 0.25)',
-          })
-        .to(svgout, 2,
-          {
-            y: '+=1', x: '-=1', rotation: '-=1', ease: 'power1.easeInOut',
-          });
-      this.$gsap.to(
-        svgout,
-        1.3,
-        {
-          y: '+=20vh',
-          yoyo: true,
-          repeat: -1,
-          ease: 'power2.easeOut',
-        },
-      ); */
+      gsap.to(iconabove, {
+        y: 1,
+        repeat: -1,
+        yoyo: true,
+      });
       gsap.to(svgout, {
         scrollTrigger: {
           trigger: bodyworkcard,
-          start: 'top 60%',
+          start: 'top 90%',
           // toggleActions: 'restart resume reverse reverse',
           toggleActions: 'play pause resume reset',
           scrub: true,
@@ -177,3 +162,111 @@ export default {
   },
 };
 </script>
+<style scoped>
+@media screen and (min-width: 601px) {
+.body-work-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+      height: 30vh;
+}
+.icon-above {
+  display: grid;
+  grid-template-rows: 0.1fr;
+  grid-template-columns: 0.1fr;
+  width: 7em;
+  flex: 0 0 7em;
+  flex-grow: 0;
+}
+.body-work-card-info-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.body-work-card-info {
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
+  width: 60vw;
+  flex: 0 0 60vw;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body-work-card-date {
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
+  width: 10vw;
+  flex: 0 0 10vw;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.svg-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+.svg-out {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 600px) {
+.body-work-card {
+  display: grid;
+  grid-template-rows: 0.9fr 0.1fr;
+  grid-template-columns: 1fr 0.1fr;
+}
+.icon-above {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: 0.1fr;
+  grid-template-columns: 0.1fr;
+}
+.body-work-card-info {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
+}
+.body-work-card-info-text {
+  padding: 0 1% 0 1%;
+  text-align: center;
+}
+.body-work-card-info-title {
+  text-align: center;
+}
+.body-work-card-date {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  display: flex;
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
+  flex-direction: column;
+  align-items: center;
+}
+.svg-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+.svg-out {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+}
+</style>

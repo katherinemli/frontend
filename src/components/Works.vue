@@ -6,15 +6,27 @@
       :svgin="svgWifi0"
       :svgout="svgWifi1"
       :svgout2="svgWifi2"/>
+      <div style="width:50%; height:10vh;">
+        <q-separator color="orange"/>
+      </div>
       <WorksCard ref="boxwherex"
       :titulo="wherex" :texto="txtWherex" :fecha="fecha" :svgvalue="svgWherex"/>
+      <div style="width:50%; height:10vh;">
+        <q-separator color="orange"/>
+      </div>
       <WorksCardBox ref="boxfalabella"
       :titulo="falabella"
       :svgin="svgBox"
       :svgout="svgArrow"
       :texto="txtFalabella" :fecha="fecha" :svgvalue="svgFalabella"/>
+      <div style="width:50%; height:10vh;">
+        <q-separator color="orange"/>
+      </div>
       <WorksCard ref="boxcitiaps"
       :titulo="citiaps" :texto="txtCitiaps" :fecha="fecha" :svgvalue="svgCitiaps"/>
+      <div style="width:50%; height:10vh;">
+        <q-separator color="orange"/>
+      </div>
       <WorksCard ref="boxteacher"
       :titulo="teacher" :texto="texto" :fecha="fecha" :svgvalue="svgTeacher"/>
     </div>

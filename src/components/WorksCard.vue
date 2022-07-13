@@ -9,7 +9,9 @@
         {{texto}}
       </div>
     </div>
-    <div ref="bodyworkcarddate" class="body-work-card-date">{{fecha}}</div>
+    <div ref="bodyworkcarddate" class="body-work-card-date">
+      {{fecha}}
+    </div>
   </div>
 </template>
 
@@ -203,3 +205,107 @@ export default {
   },
 };
 </script>
+<style scoped>
+@media screen and (min-width: 601px) {
+.body-work-card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 30vh;
+}
+.icon-above {
+  display: grid;
+  grid-template-rows: 0.1fr;
+  grid-template-columns: 0.1fr;
+  width: 7em;
+  flex: 0 0 7em;
+  flex-grow: 0;
+}
+.body-work-card-info-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.body-work-card-info {
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
+  width: 60vw;
+  flex: 0 0 60vw;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body-work-card-date {
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
+  width: 20vw;
+  flex: 0 0 20vw;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.svg-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+.svg-out {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 600px) {
+.body-work-card {
+  display: grid;
+  grid-template-rows: 0.9fr 0.1fr;
+  grid-template-columns: 0.1fr 1fr;
+}
+.icon-above {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  display: grid;
+  grid-template-rows: 0.1fr;
+  grid-template-columns: 0.1fr;
+}
+.body-work-card-info {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body-work-card-date {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  display: flex;
+  font-weight: 200;
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(1em,2.5vw,1.5em);
+  flex-direction: column;
+  align-items: center;
+}
+.svg-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+.svg-out {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+}
+</style>
