@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { gsap } from 'gsap';
+import { gsap, MotionPathPlugin } from 'gsap/all';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { ExpoScaleEase } from 'gsap/EasePack';
@@ -30,6 +30,7 @@ Vue.prototype.$gsapPlugins = {};
 Vue.prototype.$gsapPlugins.ScrollToPlugin = ScrollToPlugin;
 Vue.prototype.$gsapPlugins.ScrollTrigger = ScrollTrigger;
 Vue.prototype.$gsapPlugins.ExpoScaleEase = ExpoScaleEase;
+Vue.prototype.$gsapPlugins.MotionPathPlugin = MotionPathPlugin;
 gsap.registerPlugin(
   ...[
     ...Object.values(Vue.prototype.$gsapPlugins),

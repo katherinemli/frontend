@@ -22,13 +22,9 @@
       <div style="width:50%; height:10vh;">
         <q-separator color="orange"/>
       </div>
-      <WorksCard ref="boxcitiaps"
-      :titulo="citiaps" :texto="txtCitiaps" :fecha="fecha" :svgvalue="svgCitiaps"/>
-      <div style="width:50%; height:10vh;">
-        <q-separator color="orange"/>
+      <div>
+        <SvgWomen />
       </div>
-      <WorksCard ref="boxteacher"
-      :titulo="teacher" :texto="texto" :fecha="fecha" :svgvalue="svgTeacher"/>
     </div>
 </template>
 
@@ -38,6 +34,8 @@
 import WorksCard from 'src/components/WorksCard.vue';
 import WorksCardWifi from 'src/components/WorksCardWifi.vue';
 import WorksCardBox from 'src/components/WorksCardBox.vue';
+// import SvgAirPlane from 'src/components/SvgAirPlane.vue';
+import SvgWomen from 'src/components/SvgWomen.vue';
 // eslint-disable-next-line
 import svgComtech from '!!raw-loader?!assets/comtech.svg';
 // eslint-disable-next-line
@@ -65,6 +63,8 @@ export default {
     WorksCard,
     WorksCardWifi,
     WorksCardBox,
+    // SvgAirPlane,
+    SvgWomen,
   },
   data() {
     return {

@@ -1,6 +1,9 @@
 <template>
   <div v-intersection="onIntersection"
   @mouseover="overHover()" @mouseleave="leaveHover()" ref="bodyworkcard" class="body-work-card">
+<!--     <div>
+       <SvgDrawer/>
+    </div> -->
     <div ref="bodyworkcardinfo" class="body-work-card-info">
       <div ref="bodyworkcardinfoTitle">
         {{titulo}}
@@ -17,6 +20,7 @@
 
 <script>
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import SvgDrawer from 'src/components/SvgDrawer.vue';
 
 const props = {
   titulo: {
@@ -52,6 +56,9 @@ const props = {
 export default {
   props,
   name: 'WorksCard',
+  components: {
+    // SvgDrawer,
+  },
   data() {
     return {
       showMap: false,

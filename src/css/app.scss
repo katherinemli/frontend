@@ -653,8 +653,18 @@ svg {
   grid-column-end: 3;
   
 }
-.workBox{
+.workBox {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.svgairplane {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }

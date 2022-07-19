@@ -77,6 +77,8 @@ import { openURL } from 'quasar';
 
 export default ({
   name: 'MainLayout',
+  components: {
+  },
   data() {
     return {
       urlGmail: 'https://mail.google.com/mail/?view=cm&fs=1&to=katherine.lib.ira@gmail.com&su=I%20have%20a%20project%20in%20mind&body=I%20hope%20hear%20from%20you%20soon!',
