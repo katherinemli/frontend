@@ -1,0 +1,630 @@
+<template>
+<!-- eslint-disable -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="freepik--clip-path--inject-17">
+      <rect x="105.01" y="118.71" width="137.67" height="299.38" style="fill:#263238;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    </clipPath>
+    <clipPath id="freepik--clip-path-2--inject-17">
+      <rect x="285.09" y="133.36" width="140.74" height="141.47" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    </clipPath>
+    <clipPath id="freepik--clip-path-3--inject-17">
+      <rect x="314.08" y="267.05" width="140.74" height="95.57" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    </clipPath>
+    <clipPath id="freepik--clip-path-4--inject-17">
+      <path d="M216.11,255.14s-1.86,25.73-.31,47.7,1.85,44,5.26,58.19,6.81,54.53,6.81,57-3.1,3.09-2.17,5.57a23.79,23.79,0,0,0,2.17,4.33,69.4,69.4,0,0,0,7.74,1.86,51.37,51.37,0,0,0,7.42.62l-.31,2.47a44.57,44.57,0,0,1,10.53,1.86,36,36,0,0,0,8.35,1.86s5-5.89,5-9.29-.62-9.28,0-13.93,1.54-47.41,1.54-59.17,1.24-58.49,1.55-64.68,1.24-21.41.93-27.91-15.17,1.55-33.12-3.71S216.11,255.14,216.11,255.14Z" style="fill:#263238;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    </clipPath>
+    <filter id="shadow" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#30ff1f" />
+    </filter>
+    <filter id="shadowdown" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="red" />
+    </filter>
+  </defs>
+  <g ref="bgserver" id="freepik--background-simple--inject-17">
+    <path d="M78.69,204.2s-16,68.58,28.66,128.34S230,415.51,292.62,436s121.31-3.17,143.31-55.8-22.44-81-32.24-149.76-2-88.55-47.7-140.9-139.55-51.1-203,2.64S78.69,204.2,78.69,204.2Z" style="fill:#FF725E"/>
+    <path d="M78.69,204.2s-16,68.58,28.66,128.34S230,415.51,292.62,436s121.31-3.17,143.31-55.8-22.44-81-32.24-149.76-2-88.55-47.7-140.9-139.55-51.1-203,2.64S78.69,204.2,78.69,204.2Z" style="fill:#fff;opacity:0.7000000000000001"/>
+  </g>
+  <g id="freepik--Device--inject-17">
+    <rect x="96.24" y="107.19" width="155.2" height="322.41" class="cls-6"/>
+    <rect x="105.01" y="118.71" width="137.67" height="299.38" style="fill:#263238"/>
+    <g style="clip-path:url(#freepik--clip-path--inject-17)">
+      <path d="M101.51,419.27s4.79-2.4,17.8-12.67,25.32-15.74,33.19-15.74,13,6.16,39.36,18.14,35.25,19.51,58.52-4.45,26.69-26.69,26.69-26.69" style="fill:none;stroke:green;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M103.22,423.71s4.79-2.39,17.8-12.66,25.32-15.74,33.19-15.74,13,6.16,39.36,18.14S228.82,433,252.09,409s26.69-26.69,26.69-26.69" style="fill:none;stroke:green;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M100.83,422.35s4.79-2.4,17.79-12.67,25.33-15.74,33.2-15.74,13,6.16,39.35,18.14,35.25,19.51,58.52-4.45,26.69-26.69,26.69-26.69" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M98.09,408s5.47-7.53,21.22-1.37,23.61,19.17,41.75,11.64,18.13-17.11,42.77-16.77,46.89,19.85,46.89,19.85" style="fill:none;stroke:blue;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M98.09,405.23s5.47-7.52,21.22-1.36S142.92,423,161.06,415.5s18.13-17.11,42.77-16.77,46.89,19.85,46.89,19.85" style="fill:none;stroke:red;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M98.09,401.47s5.47-7.53,21.22-1.37,23.61,19.17,41.75,11.64,18.13-17.11,42.77-16.77,46.89,19.85,46.89,19.85" style="fill:none;stroke:green;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M98.09,411.05s5.47-7.53,21.22-1.37,23.61,19.17,41.75,11.64,18.13-17.11,42.77-16.77,46.89,19.85,46.89,19.85" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M121.7,390.18s19.85,13.69,33.88,23.95,34.22,9.24,52.7-1.37,39-15.4,39-15.4a40.47,40.47,0,0,1,16.08,2.4" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M130.6,390.52s19.85,13.69,33.88,24,34.22,9.24,52.7-1.36,39-15.4,39-15.4a40.4,40.4,0,0,1,16.09,2.39" style="fill:none;stroke:blue;stroke-linecap:round;stroke-linejoin:round"/>
+    </g>
+    <rect x="105.01" y="118.71" width="137.67" height="299.38" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="105.01" y="296.34" width="137.67" height="23.2" class="cls-7"/>
+    <rect x="105.01" y="350.26" width="137.67" height="9.55" class="cls-7"/>
+    <rect x="105.01" y="383.02" width="137.67" height="9.55" class="cls-7"/>
+    <path d="M234.68,138.74H112.61a6.6,6.6,0,0,1-6.6-6.6h0a6.59,6.59,0,0,1,6.6-6.6H234.68a6.59,6.59,0,0,1,6.6,6.6h0A6.6,6.6,0,0,1,234.68,138.74Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+
+    <g>
+      <svg>
+        <rect x="113.11" y="128.72" width="42.66" height="6.18" :class="classnameserverstatus"/>
+      </svg>
+    </g> 
+  
+    <g><svg>
+    <path d="M164.73,129.8a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,129.8Z" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <path d="M169.82,129.8a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,129.8Z" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <path d="M174.92,129.8a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,129.8Z" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <path d="M180,129.8a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,129.8Z" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <path d="M185.11,129.8a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,129.8Z" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <path d="M190.21,129.8a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,129.8Z" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="163.34" cy="134.32" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="168.43" cy="134.32" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="173.53" cy="134.32" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="178.62" cy="134.32" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <path d="M185.11,134.32a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,134.32Z" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <path d="M190.21,134.32a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,134.32Z" :class="classnameserverstatus"/>
+    </svg></g>
+    <rect x="115.04" y="130.27" width="38.8" height="3.08"  style="fill:none"/>
+    <rect x="193.24" y="123.99" width="4" height="15.91" style="fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M234.68,157.68H112.61a6.6,6.6,0,0,1-6.6-6.6h0a6.59,6.59,0,0,1,6.6-6.6H234.68a6.59,6.59,0,0,1,6.6,6.6h0A6.6,6.6,0,0,1,234.68,157.68Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g>
+    <svg>
+    <rect x="113.11" y="147.66" width="42.66" height="6.18" :class="classnameserverstatus"/>
+    </svg>
+    </g>
+    <path d="M164.73,148.74a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,148.74Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,148.74a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,148.74Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,148.74a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,148.74Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,148.74a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,148.74Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,148.74a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,148.74Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,148.74a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,148.74Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M164.73,153.26a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,153.26Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,153.26a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,153.26Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,153.26a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,153.26Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,153.26a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,153.26Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,153.26a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,153.26Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,153.26a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,153.26Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="115.04" y="149.21" width="38.8" height="3.08" style="fill:none"/>
+    <rect x="193.24" y="142.93" width="4" height="15.91" style="fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M234.68,144.48H193.24v13.2h41.44a6.6,6.6,0,0,0,0-13.2Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M234.68,176.61H112.61A6.59,6.59,0,0,1,106,170h0a6.59,6.59,0,0,1,6.6-6.59H234.68a6.59,6.59,0,0,1,6.6,6.59h0A6.59,6.59,0,0,1,234.68,176.61Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g>
+    <svg >
+    <rect x="113.11" y="166.59" width="42.66" height="6.18" :class="classnameserverstatus"/>
+    </svg>
+    </g>
+    
+    <g>
+      <svg>
+        <circle cx="163.34" cy="167.68" r="1.39" :class="classnameserverstatus"/>
+      </svg>
+    </g>
+    <g>
+      <svg>
+        <circle cx="168.43" cy="167.68" r="1.39" class="cls-5-down"/>
+      </svg>
+    </g>
+    <g>
+      <svg>
+        <circle cx="173.53" cy="167.68" r="1.39" class="cls-5-down"/>
+      </svg>
+    </g>
+    <g>
+      <svg>
+        <circle cx="178.62" cy="167.68" r="1.39" :class="classnameserverstatus"/>
+      </svg>
+    </g>
+    <path d="M185.11,167.68a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,167.68Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,167.68a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,167.68Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g><svg>
+    <circle cx="163.34" cy="172.2" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="168.43" cy="172.2" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="173.53" cy="172.2" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="178.62" cy="172.2" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <path d="M185.11,172.2a1.39,1.39,0,1,1-1.39-1.4A1.39,1.39,0,0,1,185.11,172.2Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,172.2a1.4,1.4,0,1,1-1.4-1.4A1.4,1.4,0,0,1,190.21,172.2Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="115.04" y="168.15" width="38.8" height="3.08" style="fill:none"/>
+    <rect x="193.24" y="161.87" width="4" height="15.91" style="fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="106.01" y="182.35" width="135.27" height="13.2" rx="6.6" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g>
+    <svg>
+    <rect x="113.11" y="185.53" width="42.66" height="6.18" class="cls-5-down"/>
+    </svg>
+    </g>
+    <path d="M164.73,186.61a1.39,1.39,0,1,1-1.39-1.39A1.4,1.4,0,0,1,164.73,186.61Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,186.61a1.39,1.39,0,1,1-1.39-1.39A1.4,1.4,0,0,1,169.82,186.61Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,186.61a1.39,1.39,0,1,1-1.39-1.39A1.4,1.4,0,0,1,174.92,186.61Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,186.61a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,186.61Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,186.61a1.39,1.39,0,1,1-1.39-1.39A1.4,1.4,0,0,1,185.11,186.61Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,186.61a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,186.61Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M164.73,191.13a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,191.13Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,191.13a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,191.13Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,191.13a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,191.13Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,191.13a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,191.13Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,191.13a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,191.13Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,191.13a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,191.13Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="115.04" y="187.08" width="38.8" height="3.08" style="fill:none"/>
+    <rect x="193.24" y="180.81" width="4" height="15.91" style="fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M234.68,214.49H112.61a6.59,6.59,0,0,1-6.6-6.6h0a6.6,6.6,0,0,1,6.6-6.6H234.68a6.6,6.6,0,0,1,6.6,6.6h0A6.59,6.59,0,0,1,234.68,214.49Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g>
+    <svg>
+    <rect x="113.11" y="204.47" width="42.66" height="6.18" :class="classnameserverstatus"/>
+    </svg>
+    </g>
+    <g><svg>
+    <circle cx="163.34" cy="205.55" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="168.43" cy="205.55" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="173.53" cy="205.55" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="178.62" cy="205.55" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <path d="M185.11,205.55a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,205.55Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,205.55a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,205.55Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g><svg>
+    <circle cx="163.34" cy="210.07" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="168.43" cy="210.07" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="173.53" cy="210.07" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="178.62" cy="210.07" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <path d="M185.11,210.07a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,210.07Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,210.07a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,210.07Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="115.04" y="206.02" width="38.8" height="3.08" style="fill:none"/>
+    <rect x="193.24" y="199.74" width="4" height="15.91" style="fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M234.68,378.29H112.61a6.6,6.6,0,0,1-6.6-6.6h0a6.6,6.6,0,0,1,6.6-6.6H234.68a6.6,6.6,0,0,1,6.6,6.6h0A6.6,6.6,0,0,1,234.68,378.29Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g>
+    <svg>
+    <rect x="113.11" y="368.27" width="42.66" height="6.18" :class="classnameserverstatus"/>
+    </svg>
+    </g>
+    <path d="M164.73,369.35a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,369.35Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,369.35a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,369.35Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,369.35a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,369.35Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,369.35a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,369.35Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,369.35a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,369.35Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,369.35a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,369.35Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M164.73,373.87a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,373.87Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,373.87a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,373.87Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,373.87a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,373.87Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,373.87a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,373.87Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,373.87a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,373.87Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,373.87a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,373.87Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="115.04" y="369.82" width="38.8" height="3.08" style="fill:none"/>
+    <rect x="193.24" y="363.54" width="4" height="15.91" style="fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M234.68,365.09H193.24v13.2h41.44a6.6,6.6,0,0,0,0-13.2Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M234.68,233.43H112.61a6.6,6.6,0,0,1-6.6-6.6h0a6.6,6.6,0,0,1,6.6-6.6H234.68a6.6,6.6,0,0,1,6.6,6.6h0A6.6,6.6,0,0,1,234.68,233.43Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g>
+    <svg>
+    <rect x="113.11" y="223.41" width="42.66" height="6.18" class="cls-5-down"/>
+    </svg>
+    </g>
+    <path d="M164.73,224.49a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,224.49Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,224.49a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,224.49Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,224.49a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,224.49Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,224.49a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,224.49Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,224.49a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,224.49Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,224.49a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,224.49Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M164.73,229a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,229Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,229a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,229Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,229a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,229Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,229a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,229Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,229a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,229Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,229a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,229Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="115.04" y="224.96" width="38.8" height="3.08" style="fill:none"/>
+    <rect x="193.24" y="218.68" width="4" height="15.91" style="fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="199.59" y="224.45" width="34.25" height="4.4" style="fill:#fff"/>
+    <path d="M234.68,252.37H112.61a6.6,6.6,0,0,1-6.6-6.6h0a6.59,6.59,0,0,1,6.6-6.6H234.68a6.59,6.59,0,0,1,6.6,6.6h0A6.6,6.6,0,0,1,234.68,252.37Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g>
+    <svg>
+    <rect x="113.11" y="242.35" width="42.66" height="6.18" :class="classnameserverstatus"/>
+    </svg>
+    </g>
+    <g><svg>
+    <circle cx="163.34" cy="243.43" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="168.43" cy="243.43" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="173.53" cy="243.43" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="178.62" cy="243.43" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <path d="M185.11,243.43a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,243.43Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,243.43a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,243.43Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g><svg>
+    <circle cx="163.34" cy="247.95" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="168.43" cy="247.95" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="173.53" cy="247.95" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <g><svg>
+    <circle cx="178.62" cy="247.95" r="1.39" :class="classnameserverstatus"/>
+    </svg></g>
+    <path d="M185.11,248a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,248Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,248a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,248Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="115.04" y="243.9" width="38.8" height="3.08" style="fill:none"/>
+    <rect x="193.24" y="237.62" width="4" height="15.91" style="fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M234.68,239.17H193.24v13.2h41.44a6.6,6.6,0,0,0,0-13.2Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <rect x="199.59" y="243.39" width="34.25" height="4.4" style="fill:#fff"/>
+    <rect x="106.01" y="259.64" width="135.27" height="13.2" rx="6.6" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g>
+    <svg>
+    <rect x="113.11" y="262.82" width="42.66" height="6.18" :class="classnameserverstatus"/>
+    </svg>
+    </g>
+    <path d="M164.73,263.9a1.39,1.39,0,1,1-1.39-1.39A1.4,1.4,0,0,1,164.73,263.9Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,263.9a1.39,1.39,0,1,1-1.39-1.39A1.4,1.4,0,0,1,169.82,263.9Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,263.9a1.39,1.39,0,1,1-1.39-1.39A1.4,1.4,0,0,1,174.92,263.9Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,263.9a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,263.9Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,263.9a1.39,1.39,0,1,1-1.39-1.39A1.4,1.4,0,0,1,185.11,263.9Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,263.9a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,263.9Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M164.73,268.42a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,268.42Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,268.42a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,268.42Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,268.42a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,268.42Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,268.42a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,268.42Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,268.42a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,268.42Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,268.42a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,268.42Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+
+    <rect x="106.01" y="278.07" width="135.27" height="13.2" rx="6.6" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <g>
+    <svg>
+    <rect x="113.11" y="281.25" width="42.66" height="6.18" :class="classnameserverstatus"/>
+    </svg>
+    </g>
+    <path d="M164.73,282.33a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,282.33Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,282.33a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,282.33Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,282.33a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,282.33Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,282.33a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,282.33Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,282.33a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,282.33Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,282.33a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,282.33Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M164.73,286.85a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,164.73,286.85Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M169.82,286.85a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,169.82,286.85Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M174.92,286.85a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,174.92,286.85Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M180,286.85a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,180,286.85Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M185.11,286.85a1.39,1.39,0,1,1-1.39-1.39A1.39,1.39,0,0,1,185.11,286.85Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M190.21,286.85a1.4,1.4,0,1,1-1.4-1.39A1.4,1.4,0,0,1,190.21,286.85Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+    <line x1="45.24" y1="429.74" x2="451.02" y2="429.74" style="fill:none;stroke:#263238;stroke-miterlimit:10"/>
+  </g>
+  <g id="freepik--Windows--inject-17">
+    <g ref="screenserver">
+      <polygon points="337.56 129.34 332.05 120.56 283.61 120.56 283.61 129.34 283.61 132.5 283.61 278.01 427.14 278.01 427.14 129.34 337.56 129.34" style="fill:#263238"/>
+      <rect x="285.09" y="133.36" width="140.74" height="141.47" style="fill:#fff"/>
+      <g style="clip-path:url(#freepik--clip-path-2--inject-17)">
+        <rect x="422.23" y="132.15" width="4.56" height="143.76" style="opacity:0.17"/>
+        <rect x="422.23" y="219.38" width="4.56" height="55.36" style="opacity:0.17"/>
+        <rect x="284.31" y="131.44" width="141.78" height="7.72" style="fill:#c1baba;stroke:#263238;stroke-miterlimit:10"/>
+      </g>
+      <rect x="285.09" y="133.36" width="140.74" height="141.47" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+      <g style="opacity:0.17">
+        <path d="M387.52,146.61H373.77a1.21,1.21,0,0,1-1.21-1.21h0a1.21,1.21,0,0,1,1.21-1.21h13.75a1.22,1.22,0,0,1,1.22,1.21h0A1.22,1.22,0,0,1,387.52,146.61Z"/>
+        <path d="M415,146.61H401.28a1.21,1.21,0,0,1-1.21-1.21h0a1.21,1.21,0,0,1,1.21-1.21H415a1.22,1.22,0,0,1,1.22,1.21h0A1.22,1.22,0,0,1,415,146.61Z"/>
+      </g>
+      <path d="M321.11,172.73a.18.18,0,0,1-.06-.13.38.38,0,0,1,.15-.27.42.42,0,0,1,.29-.13.17.17,0,0,1,.13.05,3.23,3.23,0,0,0,.9.52,3.07,3.07,0,0,0,1.19.22,2.46,2.46,0,0,0,1.35-.35,1.12,1.12,0,0,0,.53-1,1.73,1.73,0,0,0-.08-.55,1,1,0,0,0-.28-.39,1.73,1.73,0,0,0-.43-.27,4,4,0,0,0-.64-.24l-1.41-.48a3.19,3.19,0,0,1-1.26-.71,1.62,1.62,0,0,1-.44-1.19,1.73,1.73,0,0,1,.35-1.06,2.34,2.34,0,0,1,1-.7,4,4,0,0,1,2.76,0,3,3,0,0,1,1,.58.33.33,0,0,1,.11.23.31.31,0,0,1-.11.23.33.33,0,0,1-.24.1.31.31,0,0,1-.21-.07,3.74,3.74,0,0,0-.81-.43,2.88,2.88,0,0,0-1.11-.2,2.38,2.38,0,0,0-1.36.34,1.1,1.1,0,0,0-.5.93,1,1,0,0,0,.3.75,2.71,2.71,0,0,0,1,.49l1.42.47a7.29,7.29,0,0,1,.75.3,2.63,2.63,0,0,1,.57.39,1.56,1.56,0,0,1,.4.55,2.2,2.2,0,0,1,.13.76,1.88,1.88,0,0,1-.75,1.61,3.34,3.34,0,0,1-2.06.57A3.46,3.46,0,0,1,321.11,172.73Z" style="fill:#263238"/>
+      <path d="M330.22,173.68a2.49,2.49,0,0,1-1.85-.76,2.79,2.79,0,0,1-.74-2,3.18,3.18,0,0,1,.3-1.39,2.4,2.4,0,0,1,.89-1,2.49,2.49,0,0,1,1.39-.4,2.91,2.91,0,0,1,.92.14,2,2,0,0,1,.68.39,2,2,0,0,1,.45.58,2.42,2.42,0,0,1,.27.72,4.09,4.09,0,0,1,.1.82.25.25,0,0,1-.09.2.35.35,0,0,1-.26.08h-3.85a2.07,2.07,0,0,0,.52,1.54,1.82,1.82,0,0,0,1.32.56,2.19,2.19,0,0,0,1-.19,3.57,3.57,0,0,0,.8-.51.34.34,0,0,1,.21-.08.25.25,0,0,1,.17.08.25.25,0,0,1,.08.18.39.39,0,0,1-.13.27,3.09,3.09,0,0,1-.88.59,2.88,2.88,0,0,1-1.25.23Zm1.7-3.17a2.31,2.31,0,0,0-.46-1.36,1.41,1.41,0,0,0-1.19-.52,1.58,1.58,0,0,0-1.28.55,2.21,2.21,0,0,0-.54,1.33Z" style="fill:#263238"/>
+      <path d="M334.28,173.47a.34.34,0,0,1-.11-.27v-4.61a.34.34,0,0,1,.12-.27.44.44,0,0,1,.27-.09.4.4,0,0,1,.28.1.32.32,0,0,1,.12.27v.64a1.66,1.66,0,0,1,.54-.84,1.53,1.53,0,0,1,1-.33.24.24,0,0,1,.22.11.38.38,0,0,1,.09.25.29.29,0,0,1-.09.22.31.31,0,0,1-.24.09,1.76,1.76,0,0,0-.71.14,1.27,1.27,0,0,0-.48.36,1.53,1.53,0,0,0-.25.47,1.35,1.35,0,0,0-.09.47v3a.32.32,0,0,1-.12.27.48.48,0,0,1-.29.1A.39.39,0,0,1,334.28,173.47Z" style="fill:#263238"/>
+      <path d="M339.49,173.43a1.69,1.69,0,0,1-.28-.47l-1.81-4.24a.36.36,0,0,1,0-.11.38.38,0,0,1,.13-.28.4.4,0,0,1,.29-.12.33.33,0,0,1,.31.26l1.77,4.26,1.77-4.26c.07-.17.17-.26.32-.26a.44.44,0,0,1,.29.12.43.43,0,0,1,.13.28.2.2,0,0,1,0,.11l-1.8,4.24a1.67,1.67,0,0,1-.29.47.65.65,0,0,1-.78,0Z" style="fill:#263238"/>
+      <path d="M345.73,173.68a2.47,2.47,0,0,1-1.85-.76,2.79,2.79,0,0,1-.74-2,3.18,3.18,0,0,1,.3-1.39,2.34,2.34,0,0,1,.89-1,2.48,2.48,0,0,1,1.38-.4,2.93,2.93,0,0,1,.93.14,2.13,2.13,0,0,1,.68.39,2,2,0,0,1,.45.58,3.13,3.13,0,0,1,.27.72,3.49,3.49,0,0,1,.09.82.25.25,0,0,1-.09.2.32.32,0,0,1-.25.08h-3.86a2.07,2.07,0,0,0,.53,1.54,1.82,1.82,0,0,0,1.32.56,2.19,2.19,0,0,0,1-.19,3.81,3.81,0,0,0,.8-.51.32.32,0,0,1,.2-.08.25.25,0,0,1,.18.08.24.24,0,0,1,.07.18.35.35,0,0,1-.13.27,2.91,2.91,0,0,1-.87.59,2.88,2.88,0,0,1-1.25.23Zm1.7-3.17a2.31,2.31,0,0,0-.46-1.36,1.41,1.41,0,0,0-1.19-.52,1.62,1.62,0,0,0-1.29.55,2.26,2.26,0,0,0-.53,1.33Z" style="fill:#263238"/>
+      <path d="M349.79,173.47a.31.31,0,0,1-.11-.27v-4.61a.34.34,0,0,1,.12-.27.44.44,0,0,1,.27-.09.4.4,0,0,1,.28.1.32.32,0,0,1,.12.27v.64a1.66,1.66,0,0,1,.54-.84,1.52,1.52,0,0,1,1-.33.25.25,0,0,1,.22.11.38.38,0,0,1,.09.25.29.29,0,0,1-.09.22.33.33,0,0,1-.25.09,1.75,1.75,0,0,0-.7.14,1.13,1.13,0,0,0-.48.36,1.53,1.53,0,0,0-.25.47,1.35,1.35,0,0,0-.09.47v3a.32.32,0,0,1-.12.27.48.48,0,0,1-.29.1A.39.39,0,0,1,349.79,173.47Z" style="fill:#263238"/>
+      <path d="M359,173.46a.35.35,0,0,1-.13-.3v-6.34l-1.22.79a.38.38,0,0,1-.18.06.37.37,0,0,1-.24-.1.31.31,0,0,1,.05-.49l1.79-1.15a.46.46,0,0,1,.26-.07.44.44,0,0,1,.29.11.39.39,0,0,1,.12.31v6.88a.38.38,0,0,1-.13.3.47.47,0,0,1-.31.11A.44.44,0,0,1,359,173.46Z" style="fill:#263238"/>
+      <g><svg>
+      <rect x="292.82" y="165.05" width="17.52" height="4.48" :class="classnameserverstatus"/>
+      </svg></g>
+      <g><svg>
+      <rect x="292.82" y="170.14" width="17.52" height="4.48" :class="classnameserverstatus"/>
+      </svg></g>
+      <g><svg>
+      <rect x="311.09" y="165.09" width="3.1" height="9.52" :class="classnameserverstatus"/>
+      </svg></g>
+      <path d="M321.11,192.9a.18.18,0,0,1-.06-.13.38.38,0,0,1,.15-.27.42.42,0,0,1,.29-.13.2.2,0,0,1,.13,0,3.24,3.24,0,0,0,2.09.75,2.46,2.46,0,0,0,1.35-.35,1.14,1.14,0,0,0,.53-1,1.73,1.73,0,0,0-.08-.55,1,1,0,0,0-.28-.39,2.12,2.12,0,0,0-.43-.28c-.16-.07-.37-.15-.64-.24l-1.41-.47a3.19,3.19,0,0,1-1.26-.71,1.62,1.62,0,0,1-.44-1.19,1.71,1.71,0,0,1,.35-1.06,2.25,2.25,0,0,1,1-.7,3.59,3.59,0,0,1,1.34-.24,4,4,0,0,1,1.42.26,3.19,3.19,0,0,1,1,.59.31.31,0,0,1,.11.23.33.33,0,0,1-.11.23.33.33,0,0,1-.24.1.31.31,0,0,1-.21-.07,3.74,3.74,0,0,0-.81-.43,2.89,2.89,0,0,0-1.11-.21,2.38,2.38,0,0,0-1.36.35,1.08,1.08,0,0,0-.5.92,1,1,0,0,0,.3.76,2.89,2.89,0,0,0,1,.49l1.42.46a5.5,5.5,0,0,1,.75.31,3,3,0,0,1,.57.38,1.6,1.6,0,0,1,.4.56,2.18,2.18,0,0,1,.13.75,1.89,1.89,0,0,1-.75,1.62,3.34,3.34,0,0,1-2.06.56A3.49,3.49,0,0,1,321.11,192.9Z" style="fill:#263238"/>
+      <path d="M330.22,193.85a2.53,2.53,0,0,1-1.85-.76,2.79,2.79,0,0,1-.74-2,3.23,3.23,0,0,1,.3-1.4,2.48,2.48,0,0,1,2.28-1.42,2.91,2.91,0,0,1,.92.14,2,2,0,0,1,.68.38,2.05,2.05,0,0,1,.45.59,2.42,2.42,0,0,1,.27.72,4.08,4.08,0,0,1,.1.81.27.27,0,0,1-.09.21.4.4,0,0,1-.26.08h-3.85a2.09,2.09,0,0,0,.52,1.54,1.81,1.81,0,0,0,1.32.55,2.35,2.35,0,0,0,1-.18,3.57,3.57,0,0,0,.8-.51.34.34,0,0,1,.21-.08.25.25,0,0,1,.17.08.25.25,0,0,1,.08.18.39.39,0,0,1-.13.27,3.31,3.31,0,0,1-.88.59,3,3,0,0,1-1.25.23Zm1.7-3.17a2.28,2.28,0,0,0-.46-1.36,1.41,1.41,0,0,0-1.19-.52,1.6,1.6,0,0,0-1.28.54,2.24,2.24,0,0,0-.54,1.34Z" style="fill:#263238"/>
+      <path d="M334.28,193.64a.34.34,0,0,1-.11-.27v-4.61a.33.33,0,0,1,.12-.27.44.44,0,0,1,.27-.09.45.45,0,0,1,.28.09.35.35,0,0,1,.12.28v.64a1.58,1.58,0,0,1,.54-.84,1.54,1.54,0,0,1,1-.34.25.25,0,0,1,.22.12.37.37,0,0,1,.09.25.31.31,0,0,1-.33.31,1.76,1.76,0,0,0-.71.14,1.27,1.27,0,0,0-.48.36,1.6,1.6,0,0,0-.25.46,1.36,1.36,0,0,0-.09.48v3a.34.34,0,0,1-.12.27.48.48,0,0,1-.29.09A.44.44,0,0,1,334.28,193.64Z" style="fill:#263238"/>
+      <path d="M339.49,193.6a1.63,1.63,0,0,1-.28-.48l-1.81-4.24a.25.25,0,0,1,0-.1.37.37,0,0,1,.13-.28.4.4,0,0,1,.29-.12.32.32,0,0,1,.31.26l1.77,4.26,1.77-4.26c.07-.18.17-.26.32-.26a.44.44,0,0,1,.29.12.41.41,0,0,1,.13.28.15.15,0,0,1,0,.1l-1.8,4.24a1.61,1.61,0,0,1-.29.48.65.65,0,0,1-.78,0Z" style="fill:#263238"/>
+      <path d="M345.73,193.85a2.51,2.51,0,0,1-1.85-.76,2.79,2.79,0,0,1-.74-2,3.23,3.23,0,0,1,.3-1.4,2.37,2.37,0,0,1,.89-1,2.4,2.4,0,0,1,1.38-.4,2.93,2.93,0,0,1,.93.14,2.11,2.11,0,0,1,.68.38,2.05,2.05,0,0,1,.45.59,3.13,3.13,0,0,1,.27.72,3.47,3.47,0,0,1,.09.81.27.27,0,0,1-.09.21.36.36,0,0,1-.25.08h-3.86a2.09,2.09,0,0,0,.53,1.54,1.81,1.81,0,0,0,1.32.55,2.35,2.35,0,0,0,1-.18,3.81,3.81,0,0,0,.8-.51.32.32,0,0,1,.2-.08.25.25,0,0,1,.18.08.24.24,0,0,1,.07.18.35.35,0,0,1-.13.27,3.11,3.11,0,0,1-.87.59,3,3,0,0,1-1.25.23Zm1.7-3.17a2.28,2.28,0,0,0-.46-1.36,1.41,1.41,0,0,0-1.19-.52,1.64,1.64,0,0,0-1.29.54,2.29,2.29,0,0,0-.53,1.34Z" style="fill:#263238"/>
+      <path d="M349.79,193.64a.31.31,0,0,1-.11-.27v-4.61a.33.33,0,0,1,.12-.27.44.44,0,0,1,.27-.09.45.45,0,0,1,.28.09.35.35,0,0,1,.12.28v.64a1.58,1.58,0,0,1,.54-.84,1.52,1.52,0,0,1,1-.34.26.26,0,0,1,.22.12.37.37,0,0,1,.09.25.31.31,0,0,1-.09.22.33.33,0,0,1-.25.09,1.75,1.75,0,0,0-.7.14,1.13,1.13,0,0,0-.48.36,1.6,1.6,0,0,0-.25.46,1.36,1.36,0,0,0-.09.48v3a.34.34,0,0,1-.12.27.48.48,0,0,1-.29.09A.44.44,0,0,1,349.79,193.64Z" style="fill:#263238"/>
+      <path d="M356.71,193.6a.37.37,0,0,1-.19-.33.67.67,0,0,1,.24-.46l2.82-2.88a4.52,4.52,0,0,0,.71-.9,1.77,1.77,0,0,0,.22-.82,1.52,1.52,0,0,0-.44-1.13,1.54,1.54,0,0,0-1.09-.43,3.88,3.88,0,0,0-.71.07,3,3,0,0,0-.45.13,2,2,0,0,0-.38.2l-.29.17a.34.34,0,0,1-.15,0,.34.34,0,0,1-.25-.11.37.37,0,0,1-.1-.24.33.33,0,0,1,.18-.29l.58-.34a4,4,0,0,1,.67-.22,4.1,4.1,0,0,1,1-.1,2.26,2.26,0,0,1,1.62.63,2,2,0,0,1,.65,1.52,2.49,2.49,0,0,1-.28,1.17,5.38,5.38,0,0,1-1,1.21l-2.57,2.58h3.39a.4.4,0,0,1,.3.1.31.31,0,0,1,.11.23.34.34,0,0,1-.11.24.45.45,0,0,1-.3.09H357.2A.83.83,0,0,1,356.71,193.6Z" style="fill:#263238"/>
+      <g><svg>
+      <rect x="292.82" y="185.22" width="17.52" height="4.48" :class="classnameserverstatus"/>
+      </svg></g>
+      <g><svg>
+      <rect x="292.82" y="190.31" width="17.52" height="4.48" :class="classnameserverstatus"/>
+      </svg></g>
+      <g><svg>
+      <rect x="311.09" y="185.26" width="3.1" height="9.52" :class="classnameserverstatus"/>
+      </svg></g>
+      <path d="M321.11,213.06a.16.16,0,0,1-.06-.13.38.38,0,0,1,.15-.27.47.47,0,0,1,.29-.13.21.21,0,0,1,.13.05,3.17,3.17,0,0,0,2.09.74,2.38,2.38,0,0,0,1.35-.35,1.11,1.11,0,0,0,.53-1,1.73,1.73,0,0,0-.08-.55,1,1,0,0,0-.28-.39,1.77,1.77,0,0,0-.43-.28c-.16-.07-.37-.15-.64-.24l-1.41-.48a3.07,3.07,0,0,1-1.26-.71,1.58,1.58,0,0,1-.44-1.19,1.73,1.73,0,0,1,.35-1.06,2.32,2.32,0,0,1,1-.69,3.59,3.59,0,0,1,1.34-.24,4,4,0,0,1,1.42.26,3,3,0,0,1,1,.59.29.29,0,0,1,.11.22.34.34,0,0,1-.11.24.37.37,0,0,1-.24.1.32.32,0,0,1-.21-.08,3.36,3.36,0,0,0-.81-.42,2.89,2.89,0,0,0-1.11-.21,2.38,2.38,0,0,0-1.36.35,1.08,1.08,0,0,0-.5.92,1,1,0,0,0,.3.75,2.71,2.71,0,0,0,1,.5l1.42.46a7.29,7.29,0,0,1,.75.3,3,3,0,0,1,.57.39,1.51,1.51,0,0,1,.4.56,2.1,2.1,0,0,1,.13.75,1.91,1.91,0,0,1-.75,1.62,3.4,3.4,0,0,1-2.06.56A3.46,3.46,0,0,1,321.11,213.06Z" style="fill:#263238"/>
+      <path d="M330.22,214a2.5,2.5,0,0,1-1.85-.77,2.77,2.77,0,0,1-.74-2,3.18,3.18,0,0,1,.3-1.39,2.52,2.52,0,0,1,.89-1,2.49,2.49,0,0,1,1.39-.39,2.91,2.91,0,0,1,.92.14,1.86,1.86,0,0,1,.68.38,2.05,2.05,0,0,1,.45.59,2.23,2.23,0,0,1,.27.72,4.08,4.08,0,0,1,.1.81.29.29,0,0,1-.09.21.4.4,0,0,1-.26.08h-3.85a2.06,2.06,0,0,0,.52,1.53,1.82,1.82,0,0,0,1.32.56,2.35,2.35,0,0,0,1-.18,4,4,0,0,0,.8-.51.29.29,0,0,1,.21-.08.23.23,0,0,1,.17.07.27.27,0,0,1,.08.19.4.4,0,0,1-.13.27,3.31,3.31,0,0,1-.88.59,3,3,0,0,1-1.25.23Zm1.7-3.18a2.31,2.31,0,0,0-.46-1.36,1.43,1.43,0,0,0-1.19-.51,1.6,1.6,0,0,0-1.28.54,2.23,2.23,0,0,0-.54,1.33Z" style="fill:#263238"/>
+      <path d="M334.28,213.81a.37.37,0,0,1-.11-.27v-4.61a.32.32,0,0,1,.12-.27.45.45,0,0,1,.27-.1.45.45,0,0,1,.28.1.35.35,0,0,1,.12.28v.64a1.58,1.58,0,0,1,.54-.84,1.49,1.49,0,0,1,1-.34.27.27,0,0,1,.22.11.4.4,0,0,1,.09.25.32.32,0,0,1-.09.23.31.31,0,0,1-.24.09,1.61,1.61,0,0,0-.71.14,1.27,1.27,0,0,0-.48.36,1.48,1.48,0,0,0-.25.46,1.36,1.36,0,0,0-.09.48v3a.31.31,0,0,1-.12.26.43.43,0,0,1-.29.1A.44.44,0,0,1,334.28,213.81Z" style="fill:#263238"/>
+      <path d="M339.49,213.76a1.43,1.43,0,0,1-.28-.47l-1.81-4.24a.31.31,0,0,1,0-.11.35.35,0,0,1,.13-.27.37.37,0,0,1,.29-.13.33.33,0,0,1,.31.26l1.77,4.27,1.77-4.27c.07-.17.17-.26.32-.26a.41.41,0,0,1,.29.13.39.39,0,0,1,.13.27.18.18,0,0,1,0,.11l-1.8,4.24a1.41,1.41,0,0,1-.29.47.61.61,0,0,1-.78,0Z" style="fill:#263238"/>
+      <path d="M345.73,214a2.48,2.48,0,0,1-1.85-.77,2.77,2.77,0,0,1-.74-2,3.18,3.18,0,0,1,.3-1.39,2.43,2.43,0,0,1,2.27-1.42,2.93,2.93,0,0,1,.93.14,1.94,1.94,0,0,1,.68.38,2.05,2.05,0,0,1,.45.59,2.82,2.82,0,0,1,.27.72,3.47,3.47,0,0,1,.09.81.29.29,0,0,1-.09.21.36.36,0,0,1-.25.08h-3.86a2.07,2.07,0,0,0,.53,1.53,1.82,1.82,0,0,0,1.32.56,2.35,2.35,0,0,0,1-.18,4.26,4.26,0,0,0,.8-.51.27.27,0,0,1,.2-.08.24.24,0,0,1,.18.07.26.26,0,0,1,.07.19.36.36,0,0,1-.13.27,3.11,3.11,0,0,1-.87.59,3,3,0,0,1-1.25.23Zm1.7-3.18a2.31,2.31,0,0,0-.46-1.36,1.43,1.43,0,0,0-1.19-.51,1.64,1.64,0,0,0-1.29.54,2.29,2.29,0,0,0-.53,1.33Z" style="fill:#263238"/>
+      <path d="M349.79,213.81a.33.33,0,0,1-.11-.27v-4.61a.32.32,0,0,1,.12-.27.45.45,0,0,1,.27-.1.45.45,0,0,1,.28.1.35.35,0,0,1,.12.28v.64a1.58,1.58,0,0,1,.54-.84,1.47,1.47,0,0,1,1-.34.28.28,0,0,1,.22.11.4.4,0,0,1,.09.25.32.32,0,0,1-.09.23.33.33,0,0,1-.25.09,1.59,1.59,0,0,0-.7.14,1.13,1.13,0,0,0-.48.36,1.48,1.48,0,0,0-.25.46,1.36,1.36,0,0,0-.09.48v3a.31.31,0,0,1-.12.26.43.43,0,0,1-.29.1A.44.44,0,0,1,349.79,213.81Z" style="fill:#263238"/>
+      <path d="M357.83,213.92a2.68,2.68,0,0,1-.8-.28c-.19-.1-.29-.22-.29-.38a.3.3,0,0,1,.1-.23.33.33,0,0,1,.23-.1l.14,0a3.42,3.42,0,0,0,1.51.37A2,2,0,0,0,360,213a1.18,1.18,0,0,0,.49-1,1.49,1.49,0,0,0-.54-1.21,2.13,2.13,0,0,0-1.38-.44h-.35a.36.36,0,0,1-.26-.09.3.3,0,0,1-.09-.23.33.33,0,0,1,.35-.34h.3a2,2,0,0,0,1.28-.37,1.25,1.25,0,0,0,.47-1.07,1.18,1.18,0,0,0-.44-1,1.65,1.65,0,0,0-1.09-.36,3.49,3.49,0,0,0-.65.06,2.47,2.47,0,0,0-.48.11l-.33.14-.19.09-.11,0a.27.27,0,0,1-.23-.13.39.39,0,0,1-.1-.27.3.3,0,0,1,.17-.29l.39-.15a4.33,4.33,0,0,1,.67-.18,3.59,3.59,0,0,1,.82-.1,3.71,3.71,0,0,1,1,.12,2.39,2.39,0,0,1,.77.37,1.69,1.69,0,0,1,.53.65,2.12,2.12,0,0,1,.19.93,1.64,1.64,0,0,1-.39,1.11,1.93,1.93,0,0,1-1,.59,2,2,0,0,1,1.14.68,2.17,2.17,0,0,1,.22,2.26,1.74,1.74,0,0,1-.6.66,3.21,3.21,0,0,1-.82.37,3.69,3.69,0,0,1-.95.12A4,4,0,0,1,357.83,213.92Z" style="fill:#263238"/>
+      <g><svg>
+      <rect x="292.82" y="205.38" width="17.52" height="4.48" :class="classnameserverstatus"/>
+      </svg></g>
+      <g><svg>
+      <rect x="292.82" y="210.47" width="17.52" height="4.48" :class="classnameserverstatus"/>
+      </svg></g>
+      <g><svg>
+      <rect x="311.09" y="205.43" width="3.1" height="9.52" :class="classnameserverstatus"/>
+      </svg></g>
+      <path d="M321.11,233.23a.18.18,0,0,1-.06-.13.38.38,0,0,1,.15-.27.42.42,0,0,1,.29-.13.21.21,0,0,1,.13.05,3.23,3.23,0,0,0,.9.52,3.07,3.07,0,0,0,1.19.22,2.46,2.46,0,0,0,1.35-.35,1.12,1.12,0,0,0,.53-1,1.77,1.77,0,0,0-.08-.55,1,1,0,0,0-.28-.39,1.73,1.73,0,0,0-.43-.27,4,4,0,0,0-.64-.24l-1.41-.48a3.07,3.07,0,0,1-1.26-.71,1.6,1.6,0,0,1-.44-1.19,1.73,1.73,0,0,1,.35-1.06,2.32,2.32,0,0,1,1-.69,3.59,3.59,0,0,1,1.34-.24,3.77,3.77,0,0,1,1.42.26,3.19,3.19,0,0,1,1,.58.33.33,0,0,1,.11.23.31.31,0,0,1-.11.23.34.34,0,0,1-.24.11.32.32,0,0,1-.21-.08,3.74,3.74,0,0,0-.81-.43,2.88,2.88,0,0,0-1.11-.2,2.31,2.31,0,0,0-1.36.35,1.08,1.08,0,0,0-.5.92,1,1,0,0,0,.3.75,2.71,2.71,0,0,0,1,.49l1.42.47a7.29,7.29,0,0,1,.75.3,2.63,2.63,0,0,1,.57.39,1.56,1.56,0,0,1,.4.55,2.2,2.2,0,0,1,.13.76,1.88,1.88,0,0,1-.75,1.61,3.34,3.34,0,0,1-2.06.57A3.46,3.46,0,0,1,321.11,233.23Z" style="fill:#263238"/>
+      <path d="M330.22,234.18a2.49,2.49,0,0,1-1.85-.76,2.79,2.79,0,0,1-.74-2,3.18,3.18,0,0,1,.3-1.39,2.43,2.43,0,0,1,2.28-1.42,2.65,2.65,0,0,1,.92.14,1.86,1.86,0,0,1,.68.38,2,2,0,0,1,.45.58,2.42,2.42,0,0,1,.27.72,4.09,4.09,0,0,1,.1.82.25.25,0,0,1-.09.2.35.35,0,0,1-.26.08h-3.85a2.07,2.07,0,0,0,.52,1.54,1.82,1.82,0,0,0,1.32.56,2.19,2.19,0,0,0,1-.19,3.9,3.9,0,0,0,.8-.5.3.3,0,0,1,.21-.09.25.25,0,0,1,.17.08.25.25,0,0,1,.08.18.39.39,0,0,1-.13.27,3.09,3.09,0,0,1-.88.59,2.88,2.88,0,0,1-1.25.23Zm1.7-3.17a2.31,2.31,0,0,0-.46-1.36,1.44,1.44,0,0,0-1.19-.52,1.58,1.58,0,0,0-1.28.55,2.21,2.21,0,0,0-.54,1.33Z" style="fill:#263238"/>
+      <path d="M334.28,234a.33.33,0,0,1-.11-.26v-4.62a.31.31,0,0,1,.12-.26.39.39,0,0,1,.27-.1.4.4,0,0,1,.28.1.33.33,0,0,1,.12.27v.64a1.66,1.66,0,0,1,.54-.84,1.53,1.53,0,0,1,1-.33.27.27,0,0,1,.22.11.38.38,0,0,1,.09.25.29.29,0,0,1-.09.22.28.28,0,0,1-.24.1,1.76,1.76,0,0,0-.71.13,1.51,1.51,0,0,0-.48.36,1.65,1.65,0,0,0-.25.47,1.36,1.36,0,0,0-.09.48v3a.31.31,0,0,1-.12.26.43.43,0,0,1-.29.1A.39.39,0,0,1,334.28,234Z" style="fill:#263238"/>
+      <path d="M339.49,233.93a1.69,1.69,0,0,1-.28-.47l-1.81-4.24a.36.36,0,0,1,0-.11.38.38,0,0,1,.13-.28.4.4,0,0,1,.29-.12.33.33,0,0,1,.31.26l1.77,4.26,1.77-4.26c.07-.17.17-.26.32-.26a.44.44,0,0,1,.29.12.43.43,0,0,1,.13.28.2.2,0,0,1,0,.11l-1.8,4.24a1.67,1.67,0,0,1-.29.47.65.65,0,0,1-.78,0Z" style="fill:#263238"/>
+      <path d="M345.73,234.18a2.47,2.47,0,0,1-1.85-.76,2.79,2.79,0,0,1-.74-2,3.18,3.18,0,0,1,.3-1.39,2.39,2.39,0,0,1,.89-1,2.48,2.48,0,0,1,1.38-.39,2.67,2.67,0,0,1,.93.14,1.94,1.94,0,0,1,.68.38,2,2,0,0,1,.45.58,3.13,3.13,0,0,1,.27.72,3.49,3.49,0,0,1,.09.82.25.25,0,0,1-.09.2.32.32,0,0,1-.25.08h-3.86a2.07,2.07,0,0,0,.53,1.54,1.82,1.82,0,0,0,1.32.56,2.19,2.19,0,0,0,1-.19,4.18,4.18,0,0,0,.8-.5.28.28,0,0,1,.2-.09.25.25,0,0,1,.18.08.24.24,0,0,1,.07.18.35.35,0,0,1-.13.27,2.91,2.91,0,0,1-.87.59,2.88,2.88,0,0,1-1.25.23Zm1.7-3.17a2.31,2.31,0,0,0-.46-1.36,1.44,1.44,0,0,0-1.19-.52,1.62,1.62,0,0,0-1.29.55A2.26,2.26,0,0,0,344,231Z" style="fill:#263238"/>
+      <path d="M349.79,234a.3.3,0,0,1-.11-.26v-4.62a.31.31,0,0,1,.12-.26.39.39,0,0,1,.27-.1.4.4,0,0,1,.28.1.33.33,0,0,1,.12.27v.64a1.66,1.66,0,0,1,.54-.84,1.52,1.52,0,0,1,1-.33.28.28,0,0,1,.22.11.38.38,0,0,1,.09.25.29.29,0,0,1-.09.22.3.3,0,0,1-.25.1,1.75,1.75,0,0,0-.7.13,1.32,1.32,0,0,0-.48.36,1.65,1.65,0,0,0-.25.47,1.36,1.36,0,0,0-.09.48v3a.31.31,0,0,1-.12.26.43.43,0,0,1-.29.1A.39.39,0,0,1,349.79,234Z" style="fill:#263238"/>
+      <path d="M360,234a.38.38,0,0,1-.13-.29v-1.33H356.7a.53.53,0,0,1-.37-.14.48.48,0,0,1-.14-.34.68.68,0,0,1,.11-.35l3.09-4.76a.79.79,0,0,1,.7-.39.67.67,0,0,1,.44.15.62.62,0,0,1,.17.46v4.7h.87a.3.3,0,0,1,.24.1.36.36,0,0,1,.09.24.32.32,0,0,1-.33.33h-.87v1.33a.35.35,0,0,1-.13.29.43.43,0,0,1-.29.1A.48.48,0,0,1,360,234Zm-.13-2.29v-4.41L357,231.67Z" style="fill:#263238"/>
+      <g><svg>
+      <rect x="292.82" y="225.55" width="17.52" height="4.48" :class="classnameserverstatus"/>
+      </svg></g>
+      <g><svg>
+      <rect x="292.82" y="230.64" width="17.52" height="4.48" :class="classnameserverstatus"/>
+      </svg></g>
+      <g><svg>
+      <rect x="311.09" y="225.59" width="3.1" height="9.52" :class="classnameserverstatus"/>
+      </svg></g>
+      <line x1="292.9" y1="179.35" x2="416.56" y2="179.35" style="fill:none;stroke:#263238;stroke-miterlimit:10;stroke-width:0.5px"/>
+      <line x1="292.9" y1="199.92" x2="416.56" y2="199.92" style="fill:none;stroke:#263238;stroke-miterlimit:10;stroke-width:0.5px"/>
+      <line x1="292.9" y1="218.47" x2="416.56" y2="218.47" style="fill:none;stroke:#263238;stroke-miterlimit:10;stroke-width:0.5px"/>
+      <line x1="292.9" y1="240.26" x2="416.56" y2="240.26" style="fill:none;stroke:#263238;stroke-miterlimit:10;stroke-width:0.5px"/>
+
+    </g>
+  </g>
+  <g id="freepik--Character--inject-17">
+    <ellipse cx="246.16" cy="438.4" rx="46.07" ry="9.08" style="fill:#263238;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <g ref="armserver">
+      <path d="M182.68,228.21s-9.28-8.05-10.52-8.36-9,.93-9.91,1.24.93,7.74.93,7.74a2.63,2.63,0,0,0-.93,3.09c.62,2.17,5,.31,5,.31s3.09,3.1,6.19,3.41a50.75,50.75,0,0,0,8.35-.31Z" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M163.18,228.83s2.79,1.24,7.43-3.72" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M164.11,223.57s.48,3.82,3.88,3.82" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M189.49,227.59l-8.36-2.48s-.93-.62-.93,2.48-1.54,5.26,0,9l9,2.16Z" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M219.56,228.44s-29.45-2.71-30.07-.85-4.64,8.67-3.1,12.07S218.58,249,218.58,249Z" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/> 
+    </g>
+    <path d="M230.34,426.39s-22.9,8.67-22.9,10.53,4.95,2.16,15.48,1.23,17.33-.62,20.11-1.85,1.24-8.05,1.24-9.6S230.34,426.39,230.34,426.39Z" style="fill:#492a02;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M207.44,436.92a127.59,127.59,0,0,1,13.38-.66,143.74,143.74,0,0,0,17.59-1.47" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M245.2,431s-17,9.91-15.17,12.69,30.34-3.09,31-11.76S245.2,431,245.2,431Z" style="fill:#492a02;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M230.46,442.54s5,1.47,13.19-1.46a111.36,111.36,0,0,0,12.56-5.24" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M216.11,255.14s-1.86,25.73-.31,47.7,1.85,44,5.26,58.19,6.81,54.53,6.81,57-3.1,3.09-2.17,5.57a23.79,23.79,0,0,0,2.17,4.33,69.4,69.4,0,0,0,7.74,1.86,51.37,51.37,0,0,0,7.42.62l-.31,2.47a44.57,44.57,0,0,1,10.53,1.86,36,36,0,0,0,8.35,1.86s5-5.89,5-9.29-.62-9.28,0-13.93,1.54-47.41,1.54-59.17,1.24-58.49,1.55-64.68,1.24-21.41.93-27.91-15.17,1.55-33.12-3.71S216.11,255.14,216.11,255.14Z" style="fill:#263238"/>
+    <g style="clip-path:url(#freepik--clip-path-4--inject-17)">
+      <path d="M216.11,255.14s-1.86,25.73-.31,47.7,1.85,44,5.26,58.19,6.81,54.53,6.81,57-3.1,3.09-2.17,5.57a23.79,23.79,0,0,0,2.17,4.33,69.4,69.4,0,0,0,7.74,1.86,51.37,51.37,0,0,0,7.42.62l-.31,2.47a44.57,44.57,0,0,1,10.53,1.86,36,36,0,0,0,8.35,1.86s5-5.89,5-9.29-.62-9.28,0-13.93,1.54-47.41,1.54-59.17,1.24-58.49,1.55-64.68,1.24-21.41.93-27.91-15.17,1.55-33.12-3.71S216.11,255.14,216.11,255.14Z" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;opacity:0.30000000000000004"/>
+      <path d="M265.23,291.06c.37,10.94.83,26.91.61,33.27-.33,10.08-3.36,68.9-2.35,79s-1.34,18.49-1,21.85.34,6.72-.33,8.4" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M264.83,280s.08,1.8.18,4.69" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    </g>
+    <path d="M216.11,255.14s-1.86,25.73-.31,47.7,1.85,44,5.26,58.19,6.81,54.53,6.81,57-3.1,3.09-2.17,5.57a23.79,23.79,0,0,0,2.17,4.33,69.4,69.4,0,0,0,7.74,1.86,51.37,51.37,0,0,0,7.42.62l-.31,2.47a44.57,44.57,0,0,1,10.53,1.86,36,36,0,0,0,8.35,1.86s5-5.89,5-9.29-.62-9.28,0-13.93,1.54-47.41,1.54-59.17,1.24-58.49,1.55-64.68,1.24-21.41.93-27.91-15.17,1.55-33.12-3.71S216.11,255.14,216.11,255.14Z" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <polyline points="227.56 283.96 227.6 298.95 230.3 302.48" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <polyline points="232.35 284.43 232.4 299.42 232.59 299.67" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M236.16,319.52c1.3,8.36,3.23,22.51,4.71,41.2,2.47,31.26,4.95,55.77,4.95,58.24s-3.41,9-2.79,11.46" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M233.41,303.52s1.55,8.78,2,11.48" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M270.58,271.28c-.31-6.5-15.17,1.54-33.12-3.72s-21.35-2.78-21.35-2.78-.32,2.79-.59,7.62c2.26,2,7.09,4.66,17.3,6.3,16.12,2.59,25.82,4.91,37.8-5.74C270.61,272.4,270.61,271.85,270.58,271.28Z" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M241.93,187s-13.13,2.49-16.85,7.75-9,62.57-10.21,68.14,6.81,7.74,11.45,9.9,18.88,5.57,28.78,4.65,17-2.79,18.26-7.12,3.72-64.43,3.1-70.31-18.55-20.75-22-21.68S241.93,187,241.93,187Z" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M239.21,194.58a104.54,104.54,0,0,0-4.48,19.4c-1.68,11.82-7.23,58.12-7.23,58.12l1.45,1.69" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <polygon points="233.75 185.56 232.5 194.16 238.16 189.33 233.75 185.56" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <polygon points="238.58 182.62 237.78 183.11 233.75 185.56 239.21 194.58 247.8 181.99 238.58 182.62" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M221.11,146.56s-3.32,2-2.89,4.65,1.58,13.34,1,14.52-2.93,3.29-1.34,4.57a12.68,12.68,0,0,0,3.36,1.92s2.33,8.76,3.92,10,4.92,1.83,6,2.09,6.45,2.93,6.45,2.93l2.12,7.45,16.59-14.9-6-10.73a27.28,27.28,0,0,0,4.18-21.46c-2.85-12.35-12.36-14.33-24.37-13.56S215.73,141.32,221.11,146.56Z" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <polyline points="221.02 162.45 224.09 163.2 221.76 163.93" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M220.29,160.12s1.17-2.63,5.07-.15" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M241.49,159.77s-2.29-1-3.09.11a15.85,15.85,0,0,0-1.52,3.32s3.53-.53,2.2,1.59l-1.33,2.12" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M230.08,134.08c-12,.78-16.82,9.74-11.43,15,0,0,8.62-5.94,7.86-.76s-2.89,5.76,1.8,6.87,3.93-.81,4.3,1.64-2.14,5.21.61,5.14,2-5.57,4.36-6.29,7.39.86,6.36,7.7-4.75,7.61-4.75,7.61,1,1.55,11.36-1.34l-.28-.53a27.28,27.28,0,0,0,4.18-21.46C251.6,135.29,242.09,133.31,230.08,134.08Z" style="fill:#263238;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <polygon points="240.79 190.81 246.8 200.01 259.96 177.85 255.31 172.4 240.79 190.81" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M194.62,217.26l17.29,36.24a1.89,1.89,0,0,0,1.61,1.08l30.23,1.63a1.89,1.89,0,0,0,1.85-2.61l-14.5-35.15a1.91,1.91,0,0,0-1.6-1.17l-33-2.73A1.9,1.9,0,0,0,194.62,217.26Z" style="fill:#263238;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <polygon points="225.08 272.82 224.15 276.23 232.82 278.7 232.51 274.99 225.08 272.82" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+
+    <path ref="cable" d="M167.21,232.23V302.8s-.12,16.09,19.28,16.09,17.44-18.57,17.44-18.57V247.5c0-4.95-1.35-6.28,1.65-6.19" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/>
+
+    <path d="M231.4,246.14s-3.25-5.36-5.24-8.35-5.36-7-6.6-9.35-2.75-.25-2.25,1.74,3,6,3,6.73-.25.75-2,0-9.47-3.36-11-4.23-3.36-1.25-3.61,0,1.24,1.62,2.37,2.49a30.45,30.45,0,0,1,2.74,2.62s-2.74-1.25-3.24-1-.25,1.49,1.12,2.37a5,5,0,0,1,1.87,2.24,40.2,40.2,0,0,0,5.11,4.11,37.64,37.64,0,0,0,12.59,5.61l6,1.37.37-4.48Z" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <line x1="208.84" y1="237.79" x2="216.19" y2="242.27" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <line x1="208.34" y1="240.9" x2="214.82" y2="244.14" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <polygon points="241.49 245.23 231.58 244.3 231.15 254.61 241.99 254.36 241.49 245.23" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M268.1,198.5a37.46,37.46,0,0,0-5,12.07c-1.86,7.73-4.64,30.33-4.64,30.33L240.87,244l-.47,12.4s34.51,4.32,37,2.15,6.5-31.88,4.64-44.88-8.67-16.09-8.67-16.09" style="fill:#fff;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M258.51,240.9s4-1.24,11.76,4.64" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+    <path d="M258.82,239.66s7.43-3.71,15.16-1.55" style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
+  </g>
+</svg>
+</template>
+<script>
+
+const props = {
+  fill1binding: {
+    type: String,
+    default: '#ff715e',
+  },
+};
+export default {
+  props,
+  name: 'SvgWomen',
+  components: {
+  },
+  data() {
+    return {
+      showMap: false,
+      showAnimation: true,
+      yPercentValue: 0,
+      startValue: '',
+      fillLamp: '#4caf50',
+      fillLampOriginal: '#ff715e',
+      classnameserverstatus: 'cls-5-down',
+      statusServer: true,
+    };
+  },
+  beforeMount() {
+  },
+  mounted() {
+    this.drawSvg();
+  },
+  methods: {
+    changeColorFather() {
+      if (this.statusServer) {
+        this.classnameserverstatus = 'cls-3-noshadow';
+      } else {
+        this.classnameserverstatus = 'cls-5-down';
+      }
+      this.statusServer = !this.statusServer;
+    },
+    drawSvg() {
+      console.log('entro al menos?0');
+      const {
+        // bodyworkcard,
+        // pathairplanescreen,
+        // basefly,
+        armserver,
+        cable,
+        screenserver,
+        screenserverlittle,
+        bgserver,
+      } = this.$refs;
+      const gsap = this.$gsap;
+      // eslint-disable-next-line
+      const heroAnim = new gsap.timeline({
+        repeat: -1,
+      });
+      heroAnim.from(bgserver, 1, {
+        scale: 0,
+        transformOrigin: '50% 50%',
+        ease: 'back',
+      }, 0);
+      heroAnim.from(armserver, 1, {
+        x: 4,
+        y: 5,
+        yoyo: true,
+        ease: 'sine.inOut',
+        onComplete: () => {
+          this.changeColorFather();
+        },
+      }, 0);
+      heroAnim.from(cable, 1, {
+        y: 5,
+        x: 4,
+        yoyo: true,
+        ease: 'sine.inOut',
+      }, 0);
+      heroAnim.from(screenserver, 1, {
+        duration: 3,
+        scale: 0,
+        transformOrigin: '50% 50%',
+        ease: 'back',
+      }, 1);
+      heroAnim.from(screenserverlittle, 1, {
+        duration: 3,
+        scale: 0,
+        transformOrigin: '50% 50%',
+        ease: 'back',
+      }, 1.2);
+      heroAnim.to(screenserver, 1, {
+        duration: 3,
+        scale: 0,
+        delay: 2,
+        transformOrigin: '50% 50%',
+        ease: 'back',
+      }, 2);
+      heroAnim.to(screenserverlittle, 1, {
+        duration: 3,
+        scale: 0,
+        delay: 2,
+        transformOrigin: '50% 50%',
+        ease: 'back',
+      }, 2);
+      heroAnim.to(armserver, 1, {
+        x: 4,
+        y: 5,
+        delay: 2,
+        yoyo: true,
+        ease: 'sine.inOut',
+      }, 1.2);
+      heroAnim.to(cable, 0.5, {
+        y: 5,
+        x: 4,
+        yoyo: true,
+        delay: 2,
+        ease: 'sine.inOut',
+        onComplete: () => {
+          this.changeColorFather();
+        },
+      }, 1.2);
+      heroAnim.to(bgserver, 1, {
+        scale: 0,
+        transformOrigin: '50% 50%',
+        ease: 'back',
+        delay: 2,
+      }, 1.8);
+    },
+  },
+};
+</script>
+<style scoped>
+.cls-3-noshadow {
+  fill:none;
+  stroke:#48ff92;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  filter:url(#shadow);
+}
+.cls-5-down {
+  fill:none;
+  stroke:red;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  filter:url(#shadowdown);
+}
+.cls-6 {
+  fill:#808080;
+  stroke:#263238;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.cls-7 {
+  fill:#808080;
+  stroke:#263238;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.cls-8 {
+  fill:#fff;
+  stroke:#fff;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+</style>

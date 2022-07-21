@@ -1,7 +1,7 @@
 <template>
     <div ref="workBox" class="workBox">
       <div style="height:10vh;"><mark class="workTitle">Work</mark></div>
-      <WorksCardWifi ref="boxcomtech"
+      <!-- <WorksCardWifi ref="boxcomtech"
       :titulo="comtech" :texto="txtComtech" :fecha="fecha"
       :svgin="svgWifi0"
       :svgout="svgWifi1"
@@ -21,9 +21,25 @@
       :texto="txtFalabella" :fecha="fecha" :svgvalue="svgFalabella"/>
       <div style="width:50%; height:10vh;">
         <q-separator color="orange"/>
+      </div> -->
+      <div class="svg-container-work">
+        <SvgComtech :fill1binding="fillColor"/>
       </div>
-      <div>
-        <SvgWomen />
+      <div
+      style="height: 500px; width: 500px;">
+        <SvgWherex :fill1binding="fillColor"/>
+      </div>
+      <div
+      style="height: 500px; width: 500px;">
+        <SvgFalabella :fill1binding="fillColor"/>
+      </div>
+      <div
+      style="height: 500px; width: 500px;">
+        <SvgCitiaps :fill1binding="fillColor"/>
+      </div>
+      <div
+      style="height: 500px; width: 500px;">
+        <SvgTeacher :fill1binding="fillColor"/>
       </div>
     </div>
 </template>
@@ -31,11 +47,15 @@
 <script>
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import WorksCard from 'src/components/WorksCard.vue';
-import WorksCardWifi from 'src/components/WorksCardWifi.vue';
-import WorksCardBox from 'src/components/WorksCardBox.vue';
+// import WorksCard from 'src/components/WorksCard.vue';
+// import WorksCardWifi from 'src/components/WorksCardWifi.vue';
+// import WorksCardBox from 'src/components/WorksCardBox.vue';
 // import SvgAirPlane from 'src/components/SvgAirPlane.vue';
-import SvgWomen from 'src/components/SvgWomen.vue';
+import SvgComtech from 'src/components/SvgComtech.vue';
+import SvgWherex from 'src/components/SvgWherex.vue';
+import SvgFalabella from 'src/components/SvgFalabella.vue';
+import SvgCitiaps from 'src/components/SvgCitiaps.vue';
+import SvgTeacher from 'src/components/SvgTeacher.vue';
 // eslint-disable-next-line
 import svgComtech from '!!raw-loader?!assets/comtech.svg';
 // eslint-disable-next-line
@@ -60,11 +80,15 @@ import svgWifi2 from '!!raw-loader?!assets/wifi2.svg';
 export default {
   name: 'Works',
   components: {
-    WorksCard,
-    WorksCardWifi,
-    WorksCardBox,
+    // WorksCard,
+    // WorksCardWifi,
+    // WorksCardBox,
     // SvgAirPlane,
-    SvgWomen,
+    SvgComtech,
+    SvgWherex,
+    SvgFalabella,
+    SvgCitiaps,
+    SvgTeacher,
   },
   data() {
     return {
@@ -91,6 +115,9 @@ export default {
       txtWherex: 'Web platform for quotes and tenders that aims to transform the acquisition processes of big companies.',
       txtFalabella: 'Geosort project, software responsible for planning, tracking and geocoding orders from Falabella.com.',
       txtCitiaps: 'Platforms for managing volunteers and government entities in situations of national catastrophes such as earthquakes or tsunamis.',
+      fillColor: '#9C27B0',
+      classnameserverstatus: 'cls-5-down',
+      statusServer: true,
     };
   },
   mounted() {

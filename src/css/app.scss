@@ -422,15 +422,6 @@ progress::-moz-progress-bar {
   grid-column-end: 9;
   
 }
-svg {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  pointer-events: none;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
 .nobackground {
   background: none;
 }
@@ -667,4 +658,14 @@ svg {
   position: absolute;
   right: 0;
   top: 0;
+}
+.svg-container-work {
+  height: 500px;
+  width: 500px;
+}
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  .svg-container-work {
+    height: 150px;
+    width: 150px;
+  }
 }
