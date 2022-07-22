@@ -660,12 +660,12 @@ progress::-moz-progress-bar {
   top: 0;
 }
 .svg-container-work {
-  height: 500px;
-  width: 500px;
+  height: 40vh;
+  width: 40vw;
 }
-@media screen and (min-width: 100px) and (max-width: 600px) {
+/* @media screen and (min-width: 100px) and (max-width: 600px) {
   .svg-container-work {
-    height: 150px;
-    width: 150px;
+    height: 60vh;
+    width: 60vw;
   }
-}
+} */

@@ -25,20 +25,16 @@
       <div def="svgcomtechbox" class="svg-container-work">
         <SvgComtech :fill1binding="fillColor"/>
       </div>
-      <div
-      style="height: 500px; width: 500px;">
+      <div def="svgwherexbox" class="svg-container-work">
         <SvgWherex :fill1binding="fillColor"/>
       </div>
-      <div
-      style="height: 500px; width: 500px;">
+      <div class="svg-container-work">
         <SvgFalabella :fill1binding="fillColor"/>
       </div>
-      <div
-      style="height: 500px; width: 500px;">
+      <div class="svg-container-work">
         <SvgCitiaps :fill1binding="fillColor"/>
       </div>
-      <div
-      style="height: 500px; width: 500px;">
+      <div class="svg-container-work">
         <SvgTeacher :fill1binding="fillColor"/>
       </div>
     </div>

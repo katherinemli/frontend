@@ -1,6 +1,6 @@
 <template>
 <!-- eslint-disable -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" :viewBox="viewboxvalue">
   <defs>
     <clipPath id="freepik--clip-path--inject-17">
       <rect x="105.01" y="118.71" width="137.67" height="299.38" style="fill:#263238;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
@@ -18,7 +18,8 @@
       <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#30ff1f" />
     </filter>
     <filter id="shadowdown" width="200%" height="200%">
-      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="red" />
+<!--       <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#FF1F1F" />
+ -->      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#1F26FF" />
     </filter>
   </defs>
   <g ref="bgserver" id="freepik--background-simple--inject-17">
@@ -647,6 +648,7 @@ export default {
       classnameserverstatusStatic: 'cls-5',
       statusServer: true,
       dotsServer: [],
+      viewboxvalue: '0 0 500 500',
     };
   },
   computed: {
@@ -661,7 +663,6 @@ export default {
     classnameserverstatus() {
       const dotStatus = Math.random() < 0.5 ? '-up' : '-down';
       const className = `${this.classnameserverstatusStatic}${dotStatus}`;
-      console.log(className);
       return className;
     },
     filterDots() {
@@ -678,7 +679,6 @@ export default {
       this.statusServer = !this.statusServer;
     },
     drawSvg() {
-      console.log('entro al menos?0');
       const {
         // bodyworkcard,
         // pathairplanescreen,
@@ -800,7 +800,8 @@ export default {
 }
 .cls-5-down {
   fill:none;
-  stroke:red;
+  /* stroke:#FF4747; */
+  stroke: #4778FF;
   stroke-linecap:round;
   stroke-linejoin:round;
   filter:url(#shadowdown);
