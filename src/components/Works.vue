@@ -22,7 +22,7 @@
       <div style="width:50%; height:10vh;">
         <q-separator color="orange"/>
       </div> -->
-      <div class="svg-container-work">
+      <div def="svgcomtechbox" class="svg-container-work">
         <SvgComtech :fill1binding="fillColor"/>
       </div>
       <div
