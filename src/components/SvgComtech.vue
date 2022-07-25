@@ -14,13 +14,12 @@
     <clipPath id="freepik--clip-path-4--inject-17">
       <path d="M216.11,255.14s-1.86,25.73-.31,47.7,1.85,44,5.26,58.19,6.81,54.53,6.81,57-3.1,3.09-2.17,5.57a23.79,23.79,0,0,0,2.17,4.33,69.4,69.4,0,0,0,7.74,1.86,51.37,51.37,0,0,0,7.42.62l-.31,2.47a44.57,44.57,0,0,1,10.53,1.86,36,36,0,0,0,8.35,1.86s5-5.89,5-9.29-.62-9.28,0-13.93,1.54-47.41,1.54-59.17,1.24-58.49,1.55-64.68,1.24-21.41.93-27.91-15.17,1.55-33.12-3.71S216.11,255.14,216.11,255.14Z" style="fill:#263238;stroke:#263238;stroke-linecap:round;stroke-linejoin:round"/>
     </clipPath>
-    <filter id="shadow" width="200%" height="200%">
+<!--     <filter id="shadow" width="200%" height="200%">
       <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#30ff1f" />
     </filter>
     <filter id="shadowdown" width="200%" height="200%">
-<!--       <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#FF1F1F" />
- -->      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#1F26FF" />
-    </filter>
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#FF1F1F" />
+    </filter> -->
   </defs>
   <g ref="bgserver" id="freepik--background-simple--inject-17">
     <path d="M78.69,204.2s-16,68.58,28.66,128.34S230,415.51,292.62,436s121.31-3.17,143.31-55.8-22.44-81-32.24-149.76-2-88.55-47.7-140.9-139.55-51.1-203,2.64S78.69,204.2,78.69,204.2Z" style="fill:#77849e"/>
@@ -792,19 +791,18 @@ export default {
 </script>
 <style scoped>
 .cls-5-up {
-  fill:none;
+/*   fill:none;
   stroke:#48ff92;
   stroke-linecap:round;
   stroke-linejoin:round;
-  filter:url(#shadow);
+  filter:url(#shadow); */
 }
 .cls-5-down {
-  fill:none;
-  /* stroke:#FF4747; */
+/*   fill:none;
   stroke: #4778FF;
   stroke-linecap:round;
   stroke-linejoin:round;
-  filter:url(#shadowdown);
+  filter:url(#shadowdown); */
 }
 .cls-6 {
   fill:#808080;
